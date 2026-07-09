@@ -1,0 +1,7298 @@
+{
+    "bulbasaur": {
+        "id": 1,
+        "level": 1,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "stats": {
+            "hp": 45,
+            "attack": 49,
+            "defense": 49,
+            "sp_attack": 65,
+            "sp_defense": 65,
+            "speed": 45
+        },
+        "moves": [
+            {
+                "name": "vine-whip",
+                "learn_level": 13
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "leech-seed",
+                "learn_level": 7
+            },
+            {
+                "name": "growth",
+                "learn_level": 34
+            },
+            {
+                "name": "razor-leaf",
+                "learn_level": 27
+            },
+            {
+                "name": "solar-beam",
+                "learn_level": 48
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 20
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 41
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"
+    },
+    "ivysaur": {
+        "id": 2,
+        "level": 1,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 62,
+            "defense": 63,
+            "sp_attack": 80,
+            "sp_defense": 80,
+            "speed": 60
+        },
+        "moves": [
+            {
+                "name": "vine-whip",
+                "learn_level": 13
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "leech-seed",
+                "learn_level": 1
+            },
+            {
+                "name": "leech-seed",
+                "learn_level": 7
+            },
+            {
+                "name": "growth",
+                "learn_level": 38
+            },
+            {
+                "name": "razor-leaf",
+                "learn_level": 30
+            },
+            {
+                "name": "solar-beam",
+                "learn_level": 54
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 22
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 46
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/2.png"
+    },
+    "venusaur": {
+        "id": 3,
+        "level": 1,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "stats": {
+            "hp": 80,
+            "attack": 82,
+            "defense": 83,
+            "sp_attack": 100,
+            "sp_defense": 100,
+            "speed": 80
+        },
+        "moves": [
+            {
+                "name": "vine-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "vine-whip",
+                "learn_level": 13
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "leech-seed",
+                "learn_level": 1
+            },
+            {
+                "name": "leech-seed",
+                "learn_level": 7
+            },
+            {
+                "name": "growth",
+                "learn_level": 43
+            },
+            {
+                "name": "razor-leaf",
+                "learn_level": 30
+            },
+            {
+                "name": "solar-beam",
+                "learn_level": 65
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 22
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 55
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png"
+    },
+    "charmander": {
+        "id": 4,
+        "level": 1,
+        "types": [
+            "fire"
+        ],
+        "stats": {
+            "hp": 39,
+            "attack": 52,
+            "defense": 43,
+            "sp_attack": 60,
+            "sp_defense": 50,
+            "speed": 65
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 15
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "ember",
+                "learn_level": 9
+            },
+            {
+                "name": "flamethrower",
+                "learn_level": 38
+            },
+            {
+                "name": "fire-spin",
+                "learn_level": 46
+            },
+            {
+                "name": "rage",
+                "learn_level": 22
+            },
+            {
+                "name": "slash",
+                "learn_level": 30
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png"
+    },
+    "charmeleon": {
+        "id": 5,
+        "level": 1,
+        "types": [
+            "fire"
+        ],
+        "stats": {
+            "hp": 58,
+            "attack": 64,
+            "defense": 58,
+            "sp_attack": 80,
+            "sp_defense": 65,
+            "speed": 80
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 15
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "ember",
+                "learn_level": 1
+            },
+            {
+                "name": "ember",
+                "learn_level": 9
+            },
+            {
+                "name": "flamethrower",
+                "learn_level": 42
+            },
+            {
+                "name": "fire-spin",
+                "learn_level": 56
+            },
+            {
+                "name": "rage",
+                "learn_level": 24
+            },
+            {
+                "name": "slash",
+                "learn_level": 33
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/5.png"
+    },
+    "charizard": {
+        "id": 6,
+        "level": 1,
+        "types": [
+            "fire",
+            "flying"
+        ],
+        "stats": {
+            "hp": 78,
+            "attack": 84,
+            "defense": 78,
+            "sp_attack": 109,
+            "sp_defense": 85,
+            "speed": 100
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 15
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "ember",
+                "learn_level": 1
+            },
+            {
+                "name": "ember",
+                "learn_level": 9
+            },
+            {
+                "name": "flamethrower",
+                "learn_level": 46
+            },
+            {
+                "name": "fire-spin",
+                "learn_level": 55
+            },
+            {
+                "name": "rage",
+                "learn_level": 24
+            },
+            {
+                "name": "slash",
+                "learn_level": 36
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png"
+    },
+    "squirtle": {
+        "id": 7,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 44,
+            "attack": 48,
+            "defense": 65,
+            "sp_attack": 50,
+            "sp_defense": 64,
+            "speed": 43
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "bite",
+                "learn_level": 22
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 15
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 42
+            },
+            {
+                "name": "withdraw",
+                "learn_level": 28
+            },
+            {
+                "name": "skull-bash",
+                "learn_level": 35
+            },
+            {
+                "name": "bubble",
+                "learn_level": 8
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/7.png"
+    },
+    "wartortle": {
+        "id": 8,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 59,
+            "attack": 63,
+            "defense": 80,
+            "sp_attack": 65,
+            "sp_defense": 80,
+            "speed": 58
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "bite",
+                "learn_level": 24
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 15
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 47
+            },
+            {
+                "name": "withdraw",
+                "learn_level": 31
+            },
+            {
+                "name": "skull-bash",
+                "learn_level": 39
+            },
+            {
+                "name": "bubble",
+                "learn_level": 1
+            },
+            {
+                "name": "bubble",
+                "learn_level": 8
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/8.png"
+    },
+    "blastoise": {
+        "id": 9,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 79,
+            "attack": 83,
+            "defense": 100,
+            "sp_attack": 85,
+            "sp_defense": 105,
+            "speed": 78
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "bite",
+                "learn_level": 24
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 1
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 15
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 52
+            },
+            {
+                "name": "withdraw",
+                "learn_level": 31
+            },
+            {
+                "name": "skull-bash",
+                "learn_level": 42
+            },
+            {
+                "name": "bubble",
+                "learn_level": 1
+            },
+            {
+                "name": "bubble",
+                "learn_level": 8
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png"
+    },
+    "caterpie": {
+        "id": 10,
+        "level": 1,
+        "types": [
+            "bug"
+        ],
+        "stats": {
+            "hp": 45,
+            "attack": 30,
+            "defense": 35,
+            "sp_attack": 20,
+            "sp_defense": 20,
+            "speed": 45
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "string-shot",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/10.png"
+    },
+    "metapod": {
+        "id": 11,
+        "level": 1,
+        "types": [
+            "bug"
+        ],
+        "stats": {
+            "hp": 50,
+            "attack": 20,
+            "defense": 55,
+            "sp_attack": 25,
+            "sp_defense": 25,
+            "speed": 30
+        },
+        "moves": [
+            {
+                "name": "harden",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/11.png"
+    },
+    "butterfree": {
+        "id": 12,
+        "level": 1,
+        "types": [
+            "bug",
+            "flying"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 45,
+            "defense": 50,
+            "sp_attack": 90,
+            "sp_defense": 80,
+            "speed": 70
+        },
+        "moves": [
+            {
+                "name": "whirlwind",
+                "learn_level": 26
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 21
+            },
+            {
+                "name": "psybeam",
+                "learn_level": 32
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 15
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 16
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 17
+            },
+            {
+                "name": "confusion",
+                "learn_level": 1
+            },
+            {
+                "name": "confusion",
+                "learn_level": 12
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/12.png"
+    },
+    "weedle": {
+        "id": 13,
+        "level": 1,
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "stats": {
+            "hp": 40,
+            "attack": 35,
+            "defense": 30,
+            "sp_attack": 20,
+            "sp_defense": 20,
+            "speed": 50
+        },
+        "moves": [
+            {
+                "name": "poison-sting",
+                "learn_level": 1
+            },
+            {
+                "name": "string-shot",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/13.png"
+    },
+    "kakuna": {
+        "id": 14,
+        "level": 1,
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "stats": {
+            "hp": 45,
+            "attack": 25,
+            "defense": 50,
+            "sp_attack": 25,
+            "sp_defense": 25,
+            "speed": 35
+        },
+        "moves": [
+            {
+                "name": "harden",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/14.png"
+    },
+    "beedrill": {
+        "id": 15,
+        "level": 1,
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 90,
+            "defense": 40,
+            "sp_attack": 45,
+            "sp_defense": 80,
+            "speed": 75
+        },
+        "moves": [
+            {
+                "name": "fury-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "fury-attack",
+                "learn_level": 12
+            },
+            {
+                "name": "twineedle",
+                "learn_level": 20
+            },
+            {
+                "name": "pin-missile",
+                "learn_level": 30
+            },
+            {
+                "name": "agility",
+                "learn_level": 35
+            },
+            {
+                "name": "rage",
+                "learn_level": 25
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 16
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/15.png"
+    },
+    "pidgey": {
+        "id": 16,
+        "level": 1,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "stats": {
+            "hp": 40,
+            "attack": 45,
+            "defense": 40,
+            "sp_attack": 35,
+            "sp_defense": 35,
+            "speed": 56
+        },
+        "moves": [
+            {
+                "name": "gust",
+                "learn_level": 1
+            },
+            {
+                "name": "wing-attack",
+                "learn_level": 28
+            },
+            {
+                "name": "whirlwind",
+                "learn_level": 19
+            },
+            {
+                "name": "sand-attack",
+                "learn_level": 5
+            },
+            {
+                "name": "agility",
+                "learn_level": 36
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 12
+            },
+            {
+                "name": "mirror-move",
+                "learn_level": 44
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/16.png"
+    },
+    "pidgeotto": {
+        "id": 17,
+        "level": 1,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "stats": {
+            "hp": 63,
+            "attack": 60,
+            "defense": 55,
+            "sp_attack": 50,
+            "sp_defense": 50,
+            "speed": 71
+        },
+        "moves": [
+            {
+                "name": "gust",
+                "learn_level": 1
+            },
+            {
+                "name": "wing-attack",
+                "learn_level": 31
+            },
+            {
+                "name": "whirlwind",
+                "learn_level": 21
+            },
+            {
+                "name": "sand-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "sand-attack",
+                "learn_level": 5
+            },
+            {
+                "name": "agility",
+                "learn_level": 40
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 12
+            },
+            {
+                "name": "mirror-move",
+                "learn_level": 49
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/17.png"
+    },
+    "pidgeot": {
+        "id": 18,
+        "level": 1,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "stats": {
+            "hp": 83,
+            "attack": 80,
+            "defense": 75,
+            "sp_attack": 70,
+            "sp_defense": 70,
+            "speed": 101
+        },
+        "moves": [
+            {
+                "name": "gust",
+                "learn_level": 1
+            },
+            {
+                "name": "wing-attack",
+                "learn_level": 31
+            },
+            {
+                "name": "whirlwind",
+                "learn_level": 21
+            },
+            {
+                "name": "sand-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "sand-attack",
+                "learn_level": 5
+            },
+            {
+                "name": "agility",
+                "learn_level": 44
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 12
+            },
+            {
+                "name": "mirror-move",
+                "learn_level": 54
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/18.png"
+    },
+    "rattata": {
+        "id": 19,
+        "level": 1,
+        "types": [
+            "normal"
+        ],
+        "stats": {
+            "hp": 30,
+            "attack": 56,
+            "defense": 35,
+            "sp_attack": 25,
+            "sp_defense": 35,
+            "speed": 72
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 7
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 23
+            },
+            {
+                "name": "hyper-fang",
+                "learn_level": 14
+            },
+            {
+                "name": "super-fang",
+                "learn_level": 34
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/19.png"
+    },
+    "raticate": {
+        "id": 20,
+        "level": 1,
+        "types": [
+            "normal"
+        ],
+        "stats": {
+            "hp": 55,
+            "attack": 81,
+            "defense": 60,
+            "sp_attack": 50,
+            "sp_defense": 70,
+            "speed": 97
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 7
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 27
+            },
+            {
+                "name": "hyper-fang",
+                "learn_level": 14
+            },
+            {
+                "name": "super-fang",
+                "learn_level": 41
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/20.png"
+    },
+    "spearow": {
+        "id": 21,
+        "level": 1,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "stats": {
+            "hp": 40,
+            "attack": 60,
+            "defense": 30,
+            "sp_attack": 31,
+            "sp_defense": 31,
+            "speed": 70
+        },
+        "moves": [
+            {
+                "name": "fury-attack",
+                "learn_level": 15
+            },
+            {
+                "name": "leer",
+                "learn_level": 9
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "peck",
+                "learn_level": 1
+            },
+            {
+                "name": "drill-peck",
+                "learn_level": 29
+            },
+            {
+                "name": "agility",
+                "learn_level": 36
+            },
+            {
+                "name": "mirror-move",
+                "learn_level": 22
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/21.png"
+    },
+    "fearow": {
+        "id": 22,
+        "level": 1,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 90,
+            "defense": 65,
+            "sp_attack": 61,
+            "sp_defense": 61,
+            "speed": 100
+        },
+        "moves": [
+            {
+                "name": "fury-attack",
+                "learn_level": 15
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 9
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "peck",
+                "learn_level": 1
+            },
+            {
+                "name": "drill-peck",
+                "learn_level": 34
+            },
+            {
+                "name": "agility",
+                "learn_level": 43
+            },
+            {
+                "name": "mirror-move",
+                "learn_level": 25
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/22.png"
+    },
+    "ekans": {
+        "id": 23,
+        "level": 1,
+        "types": [
+            "poison"
+        ],
+        "stats": {
+            "hp": 35,
+            "attack": 60,
+            "defense": 44,
+            "sp_attack": 40,
+            "sp_defense": 54,
+            "speed": 55
+        },
+        "moves": [
+            {
+                "name": "wrap",
+                "learn_level": 1
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 10
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "bite",
+                "learn_level": 17
+            },
+            {
+                "name": "acid",
+                "learn_level": 38
+            },
+            {
+                "name": "screech",
+                "learn_level": 31
+            },
+            {
+                "name": "glare",
+                "learn_level": 24
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/23.png"
+    },
+    "arbok": {
+        "id": 24,
+        "level": 1,
+        "types": [
+            "poison"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 95,
+            "defense": 69,
+            "sp_attack": 65,
+            "sp_defense": 79,
+            "speed": 80
+        },
+        "moves": [
+            {
+                "name": "wrap",
+                "learn_level": 1
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 1
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 10
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "bite",
+                "learn_level": 17
+            },
+            {
+                "name": "acid",
+                "learn_level": 47
+            },
+            {
+                "name": "screech",
+                "learn_level": 36
+            },
+            {
+                "name": "glare",
+                "learn_level": 27
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/24.png"
+    },
+    "pikachu": {
+        "id": 25,
+        "level": 1,
+        "types": [
+            "electric"
+        ],
+        "stats": {
+            "hp": 35,
+            "attack": 55,
+            "defense": 40,
+            "sp_attack": 50,
+            "sp_defense": 50,
+            "speed": 90
+        },
+        "moves": [
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "thunder-shock",
+                "learn_level": 1
+            },
+            {
+                "name": "thunder-wave",
+                "learn_level": 9
+            },
+            {
+                "name": "thunder",
+                "learn_level": 43
+            },
+            {
+                "name": "agility",
+                "learn_level": 33
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 16
+            },
+            {
+                "name": "swift",
+                "learn_level": 26
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png"
+    },
+    "raichu": {
+        "id": 26,
+        "level": 1,
+        "types": [
+            "electric"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 90,
+            "defense": 55,
+            "sp_attack": 90,
+            "sp_defense": 80,
+            "speed": 110
+        },
+        "moves": [
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "thunder-shock",
+                "learn_level": 1
+            },
+            {
+                "name": "thunder-wave",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/26.png"
+    },
+    "sandshrew": {
+        "id": 27,
+        "level": 1,
+        "types": [
+            "ground"
+        ],
+        "stats": {
+            "hp": 50,
+            "attack": 75,
+            "defense": 85,
+            "sp_attack": 20,
+            "sp_defense": 30,
+            "speed": 40
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "sand-attack",
+                "learn_level": 10
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 24
+            },
+            {
+                "name": "swift",
+                "learn_level": 31
+            },
+            {
+                "name": "fury-swipes",
+                "learn_level": 38
+            },
+            {
+                "name": "slash",
+                "learn_level": 17
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/27.png"
+    },
+    "sandslash": {
+        "id": 28,
+        "level": 1,
+        "types": [
+            "ground"
+        ],
+        "stats": {
+            "hp": 75,
+            "attack": 100,
+            "defense": 110,
+            "sp_attack": 45,
+            "sp_defense": 55,
+            "speed": 65
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "sand-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "sand-attack",
+                "learn_level": 10
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 27
+            },
+            {
+                "name": "swift",
+                "learn_level": 36
+            },
+            {
+                "name": "fury-swipes",
+                "learn_level": 47
+            },
+            {
+                "name": "slash",
+                "learn_level": 17
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/28.png"
+    },
+    "nidoran-f": {
+        "id": 29,
+        "level": 1,
+        "types": [
+            "poison"
+        ],
+        "stats": {
+            "hp": 55,
+            "attack": 47,
+            "defense": 52,
+            "sp_attack": 40,
+            "sp_defense": 40,
+            "speed": 41
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 8
+            },
+            {
+                "name": "double-kick",
+                "learn_level": 43
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 21
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 14
+            },
+            {
+                "name": "bite",
+                "learn_level": 29
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "fury-swipes",
+                "learn_level": 36
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/29.png"
+    },
+    "nidorina": {
+        "id": 30,
+        "level": 1,
+        "types": [
+            "poison"
+        ],
+        "stats": {
+            "hp": 70,
+            "attack": 62,
+            "defense": 67,
+            "sp_attack": 55,
+            "sp_defense": 55,
+            "speed": 56
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "scratch",
+                "learn_level": 8
+            },
+            {
+                "name": "double-kick",
+                "learn_level": 50
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 23
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 14
+            },
+            {
+                "name": "bite",
+                "learn_level": 32
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "fury-swipes",
+                "learn_level": 41
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/30.png"
+    },
+    "nidoqueen": {
+        "id": 31,
+        "level": 1,
+        "types": [
+            "poison",
+            "ground"
+        ],
+        "stats": {
+            "hp": 90,
+            "attack": 92,
+            "defense": 87,
+            "sp_attack": 75,
+            "sp_defense": 85,
+            "speed": 76
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "scratch",
+                "learn_level": 8
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "body-slam",
+                "learn_level": 1
+            },
+            {
+                "name": "body-slam",
+                "learn_level": 23
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 14
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/31.png"
+    },
+    "nidoran-m": {
+        "id": 32,
+        "level": 1,
+        "types": [
+            "poison"
+        ],
+        "stats": {
+            "hp": 46,
+            "attack": 57,
+            "defense": 40,
+            "sp_attack": 40,
+            "sp_defense": 40,
+            "speed": 50
+        },
+        "moves": [
+            {
+                "name": "double-kick",
+                "learn_level": 43
+            },
+            {
+                "name": "horn-attack",
+                "learn_level": 8
+            },
+            {
+                "name": "fury-attack",
+                "learn_level": 29
+            },
+            {
+                "name": "horn-drill",
+                "learn_level": 36
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 14
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 21
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/32.png"
+    },
+    "nidorino": {
+        "id": 33,
+        "level": 1,
+        "types": [
+            "poison"
+        ],
+        "stats": {
+            "hp": 61,
+            "attack": 72,
+            "defense": 57,
+            "sp_attack": 55,
+            "sp_defense": 55,
+            "speed": 65
+        },
+        "moves": [
+            {
+                "name": "double-kick",
+                "learn_level": 50
+            },
+            {
+                "name": "horn-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "horn-attack",
+                "learn_level": 8
+            },
+            {
+                "name": "fury-attack",
+                "learn_level": 32
+            },
+            {
+                "name": "horn-drill",
+                "learn_level": 41
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 14
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 23
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/33.png"
+    },
+    "nidoking": {
+        "id": 34,
+        "level": 1,
+        "types": [
+            "poison",
+            "ground"
+        ],
+        "stats": {
+            "hp": 81,
+            "attack": 102,
+            "defense": 77,
+            "sp_attack": 85,
+            "sp_defense": 75,
+            "speed": 85
+        },
+        "moves": [
+            {
+                "name": "horn-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "horn-attack",
+                "learn_level": 8
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "thrash",
+                "learn_level": 1
+            },
+            {
+                "name": "thrash",
+                "learn_level": 23
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 1
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 14
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/34.png"
+    },
+    "clefairy": {
+        "id": 35,
+        "level": 1,
+        "types": [
+            "fairy"
+        ],
+        "stats": {
+            "hp": 70,
+            "attack": 45,
+            "defense": 48,
+            "sp_attack": 60,
+            "sp_defense": 65,
+            "speed": 35
+        },
+        "moves": [
+            {
+                "name": "pound",
+                "learn_level": 1
+            },
+            {
+                "name": "double-slap",
+                "learn_level": 18
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "sing",
+                "learn_level": 13
+            },
+            {
+                "name": "minimize",
+                "learn_level": 24
+            },
+            {
+                "name": "defense-curl",
+                "learn_level": 39
+            },
+            {
+                "name": "light-screen",
+                "learn_level": 48
+            },
+            {
+                "name": "metronome",
+                "learn_level": 31
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/35.png"
+    },
+    "clefable": {
+        "id": 36,
+        "level": 1,
+        "types": [
+            "fairy"
+        ],
+        "stats": {
+            "hp": 95,
+            "attack": 70,
+            "defense": 73,
+            "sp_attack": 95,
+            "sp_defense": 90,
+            "speed": 60
+        },
+        "moves": [
+            {
+                "name": "double-slap",
+                "learn_level": 1
+            },
+            {
+                "name": "sing",
+                "learn_level": 1
+            },
+            {
+                "name": "minimize",
+                "learn_level": 1
+            },
+            {
+                "name": "metronome",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/36.png"
+    },
+    "vulpix": {
+        "id": 37,
+        "level": 1,
+        "types": [
+            "fire"
+        ],
+        "stats": {
+            "hp": 38,
+            "attack": 41,
+            "defense": 40,
+            "sp_attack": 50,
+            "sp_defense": 65,
+            "speed": 65
+        },
+        "moves": [
+            {
+                "name": "tail-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "roar",
+                "learn_level": 21
+            },
+            {
+                "name": "ember",
+                "learn_level": 1
+            },
+            {
+                "name": "flamethrower",
+                "learn_level": 35
+            },
+            {
+                "name": "fire-spin",
+                "learn_level": 42
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 16
+            },
+            {
+                "name": "confuse-ray",
+                "learn_level": 28
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/37.png"
+    },
+    "ninetales": {
+        "id": 38,
+        "level": 1,
+        "types": [
+            "fire"
+        ],
+        "stats": {
+            "hp": 73,
+            "attack": 76,
+            "defense": 75,
+            "sp_attack": 81,
+            "sp_defense": 100,
+            "speed": 100
+        },
+        "moves": [
+            {
+                "name": "tail-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "roar",
+                "learn_level": 1
+            },
+            {
+                "name": "ember",
+                "learn_level": 1
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/38.png"
+    },
+    "jigglypuff": {
+        "id": 39,
+        "level": 1,
+        "types": [
+            "normal",
+            "fairy"
+        ],
+        "stats": {
+            "hp": 115,
+            "attack": 45,
+            "defense": 20,
+            "sp_attack": 45,
+            "sp_defense": 25,
+            "speed": 20
+        },
+        "moves": [
+            {
+                "name": "pound",
+                "learn_level": 9
+            },
+            {
+                "name": "double-slap",
+                "learn_level": 24
+            },
+            {
+                "name": "body-slam",
+                "learn_level": 34
+            },
+            {
+                "name": "double-edge",
+                "learn_level": 39
+            },
+            {
+                "name": "sing",
+                "learn_level": 1
+            },
+            {
+                "name": "disable",
+                "learn_level": 14
+            },
+            {
+                "name": "defense-curl",
+                "learn_level": 19
+            },
+            {
+                "name": "rest",
+                "learn_level": 29
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/39.png"
+    },
+    "wigglytuff": {
+        "id": 40,
+        "level": 1,
+        "types": [
+            "normal",
+            "fairy"
+        ],
+        "stats": {
+            "hp": 140,
+            "attack": 70,
+            "defense": 45,
+            "sp_attack": 85,
+            "sp_defense": 50,
+            "speed": 45
+        },
+        "moves": [
+            {
+                "name": "double-slap",
+                "learn_level": 1
+            },
+            {
+                "name": "sing",
+                "learn_level": 1
+            },
+            {
+                "name": "disable",
+                "learn_level": 1
+            },
+            {
+                "name": "defense-curl",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/40.png"
+    },
+    "zubat": {
+        "id": 41,
+        "level": 1,
+        "types": [
+            "poison",
+            "flying"
+        ],
+        "stats": {
+            "hp": 40,
+            "attack": 45,
+            "defense": 35,
+            "sp_attack": 30,
+            "sp_defense": 40,
+            "speed": 55
+        },
+        "moves": [
+            {
+                "name": "wing-attack",
+                "learn_level": 28
+            },
+            {
+                "name": "bite",
+                "learn_level": 15
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 10
+            },
+            {
+                "name": "confuse-ray",
+                "learn_level": 21
+            },
+            {
+                "name": "haze",
+                "learn_level": 36
+            },
+            {
+                "name": "leech-life",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/41.png"
+    },
+    "golbat": {
+        "id": 42,
+        "level": 1,
+        "types": [
+            "poison",
+            "flying"
+        ],
+        "stats": {
+            "hp": 75,
+            "attack": 80,
+            "defense": 70,
+            "sp_attack": 65,
+            "sp_defense": 75,
+            "speed": 90
+        },
+        "moves": [
+            {
+                "name": "wing-attack",
+                "learn_level": 32
+            },
+            {
+                "name": "bite",
+                "learn_level": 1
+            },
+            {
+                "name": "bite",
+                "learn_level": 15
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 10
+            },
+            {
+                "name": "screech",
+                "learn_level": 1
+            },
+            {
+                "name": "confuse-ray",
+                "learn_level": 21
+            },
+            {
+                "name": "haze",
+                "learn_level": 43
+            },
+            {
+                "name": "leech-life",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/42.png"
+    },
+    "oddish": {
+        "id": 43,
+        "level": 1,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "stats": {
+            "hp": 45,
+            "attack": 50,
+            "defense": 55,
+            "sp_attack": 75,
+            "sp_defense": 65,
+            "speed": 30
+        },
+        "moves": [
+            {
+                "name": "acid",
+                "learn_level": 24
+            },
+            {
+                "name": "absorb",
+                "learn_level": 1
+            },
+            {
+                "name": "solar-beam",
+                "learn_level": 46
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 15
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 17
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 19
+            },
+            {
+                "name": "petal-dance",
+                "learn_level": 33
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/43.png"
+    },
+    "gloom": {
+        "id": 44,
+        "level": 1,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 65,
+            "defense": 70,
+            "sp_attack": 85,
+            "sp_defense": 75,
+            "speed": 40
+        },
+        "moves": [
+            {
+                "name": "acid",
+                "learn_level": 28
+            },
+            {
+                "name": "absorb",
+                "learn_level": 1
+            },
+            {
+                "name": "solar-beam",
+                "learn_level": 52
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 1
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 15
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 1
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 17
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 19
+            },
+            {
+                "name": "petal-dance",
+                "learn_level": 38
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/44.png"
+    },
+    "vileplume": {
+        "id": 45,
+        "level": 1,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "stats": {
+            "hp": 75,
+            "attack": 80,
+            "defense": 85,
+            "sp_attack": 110,
+            "sp_defense": 90,
+            "speed": 50
+        },
+        "moves": [
+            {
+                "name": "acid",
+                "learn_level": 1
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 15
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 1
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 17
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 1
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 19
+            },
+            {
+                "name": "petal-dance",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/45.png"
+    },
+    "paras": {
+        "id": 46,
+        "level": 1,
+        "types": [
+            "bug",
+            "grass"
+        ],
+        "stats": {
+            "hp": 35,
+            "attack": 70,
+            "defense": 55,
+            "sp_attack": 45,
+            "sp_defense": 55,
+            "speed": 25
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "growth",
+                "learn_level": 41
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 13
+            },
+            {
+                "name": "leech-life",
+                "learn_level": 20
+            },
+            {
+                "name": "spore",
+                "learn_level": 27
+            },
+            {
+                "name": "slash",
+                "learn_level": 34
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/46.png"
+    },
+    "parasect": {
+        "id": 47,
+        "level": 1,
+        "types": [
+            "bug",
+            "grass"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 95,
+            "defense": 80,
+            "sp_attack": 60,
+            "sp_defense": 80,
+            "speed": 30
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "growth",
+                "learn_level": 48
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 1
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 13
+            },
+            {
+                "name": "leech-life",
+                "learn_level": 1
+            },
+            {
+                "name": "leech-life",
+                "learn_level": 20
+            },
+            {
+                "name": "spore",
+                "learn_level": 30
+            },
+            {
+                "name": "slash",
+                "learn_level": 39
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/47.png"
+    },
+    "venonat": {
+        "id": 48,
+        "level": 1,
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 55,
+            "defense": 50,
+            "sp_attack": 40,
+            "sp_defense": 55,
+            "speed": 45
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "disable",
+                "learn_level": 1
+            },
+            {
+                "name": "psybeam",
+                "learn_level": 35
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 24
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 30
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 38
+            },
+            {
+                "name": "psychic",
+                "learn_level": 43
+            },
+            {
+                "name": "leech-life",
+                "learn_level": 27
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/48.png"
+    },
+    "venomoth": {
+        "id": 49,
+        "level": 1,
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "stats": {
+            "hp": 70,
+            "attack": 65,
+            "defense": 60,
+            "sp_attack": 90,
+            "sp_defense": 75,
+            "speed": 90
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "disable",
+                "learn_level": 1
+            },
+            {
+                "name": "psybeam",
+                "learn_level": 38
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 1
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 24
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 30
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 43
+            },
+            {
+                "name": "psychic",
+                "learn_level": 50
+            },
+            {
+                "name": "leech-life",
+                "learn_level": 1
+            },
+            {
+                "name": "leech-life",
+                "learn_level": 27
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/49.png"
+    },
+    "diglett": {
+        "id": 50,
+        "level": 1,
+        "types": [
+            "ground"
+        ],
+        "stats": {
+            "hp": 10,
+            "attack": 55,
+            "defense": 25,
+            "sp_attack": 35,
+            "sp_defense": 45,
+            "speed": 95
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "sand-attack",
+                "learn_level": 24
+            },
+            {
+                "name": "growl",
+                "learn_level": 15
+            },
+            {
+                "name": "earthquake",
+                "learn_level": 40
+            },
+            {
+                "name": "dig",
+                "learn_level": 19
+            },
+            {
+                "name": "slash",
+                "learn_level": 31
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/50.png"
+    },
+    "dugtrio": {
+        "id": 51,
+        "level": 1,
+        "types": [
+            "ground"
+        ],
+        "stats": {
+            "hp": 35,
+            "attack": 100,
+            "defense": 50,
+            "sp_attack": 50,
+            "sp_defense": 70,
+            "speed": 120
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "sand-attack",
+                "learn_level": 24
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "growl",
+                "learn_level": 15
+            },
+            {
+                "name": "earthquake",
+                "learn_level": 47
+            },
+            {
+                "name": "dig",
+                "learn_level": 1
+            },
+            {
+                "name": "dig",
+                "learn_level": 19
+            },
+            {
+                "name": "slash",
+                "learn_level": 35
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/51.png"
+    },
+    "meowth": {
+        "id": 52,
+        "level": 1,
+        "types": [
+            "normal"
+        ],
+        "stats": {
+            "hp": 40,
+            "attack": 45,
+            "defense": 35,
+            "sp_attack": 40,
+            "sp_defense": 40,
+            "speed": 90
+        },
+        "moves": [
+            {
+                "name": "pay-day",
+                "learn_level": 17
+            },
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "bite",
+                "learn_level": 12
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "screech",
+                "learn_level": 24
+            },
+            {
+                "name": "fury-swipes",
+                "learn_level": 33
+            },
+            {
+                "name": "slash",
+                "learn_level": 44
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/52.png"
+    },
+    "persian": {
+        "id": 53,
+        "level": 1,
+        "types": [
+            "normal"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 70,
+            "defense": 60,
+            "sp_attack": 65,
+            "sp_defense": 65,
+            "speed": 115
+        },
+        "moves": [
+            {
+                "name": "pay-day",
+                "learn_level": 17
+            },
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "bite",
+                "learn_level": 1
+            },
+            {
+                "name": "bite",
+                "learn_level": 12
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "screech",
+                "learn_level": 1
+            },
+            {
+                "name": "screech",
+                "learn_level": 24
+            },
+            {
+                "name": "fury-swipes",
+                "learn_level": 37
+            },
+            {
+                "name": "slash",
+                "learn_level": 51
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/53.png"
+    },
+    "psyduck": {
+        "id": 54,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 50,
+            "attack": 52,
+            "defense": 48,
+            "sp_attack": 65,
+            "sp_defense": 50,
+            "speed": 55
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 28
+            },
+            {
+                "name": "disable",
+                "learn_level": 31
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 52
+            },
+            {
+                "name": "confusion",
+                "learn_level": 36
+            },
+            {
+                "name": "fury-swipes",
+                "learn_level": 43
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/54.png"
+    },
+    "golduck": {
+        "id": 55,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 80,
+            "attack": 82,
+            "defense": 78,
+            "sp_attack": 95,
+            "sp_defense": 80,
+            "speed": 85
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 28
+            },
+            {
+                "name": "disable",
+                "learn_level": 1
+            },
+            {
+                "name": "disable",
+                "learn_level": 31
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 59
+            },
+            {
+                "name": "confusion",
+                "learn_level": 39
+            },
+            {
+                "name": "fury-swipes",
+                "learn_level": 48
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/55.png"
+    },
+    "mankey": {
+        "id": 56,
+        "level": 1,
+        "types": [
+            "fighting"
+        ],
+        "stats": {
+            "hp": 40,
+            "attack": 80,
+            "defense": 35,
+            "sp_attack": 35,
+            "sp_defense": 45,
+            "speed": 70
+        },
+        "moves": [
+            {
+                "name": "karate-chop",
+                "learn_level": 15
+            },
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "thrash",
+                "learn_level": 39
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "seismic-toss",
+                "learn_level": 33
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 27
+            },
+            {
+                "name": "fury-swipes",
+                "learn_level": 21
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/56.png"
+    },
+    "primeape": {
+        "id": 57,
+        "level": 1,
+        "types": [
+            "fighting"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 105,
+            "defense": 60,
+            "sp_attack": 60,
+            "sp_defense": 70,
+            "speed": 95
+        },
+        "moves": [
+            {
+                "name": "karate-chop",
+                "learn_level": 1
+            },
+            {
+                "name": "karate-chop",
+                "learn_level": 15
+            },
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "thrash",
+                "learn_level": 46
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "seismic-toss",
+                "learn_level": 37
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 27
+            },
+            {
+                "name": "fury-swipes",
+                "learn_level": 1
+            },
+            {
+                "name": "fury-swipes",
+                "learn_level": 21
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/57.png"
+    },
+    "growlithe": {
+        "id": 58,
+        "level": 1,
+        "types": [
+            "fire"
+        ],
+        "stats": {
+            "hp": 55,
+            "attack": 70,
+            "defense": 45,
+            "sp_attack": 70,
+            "sp_defense": 50,
+            "speed": 60
+        },
+        "moves": [
+            {
+                "name": "take-down",
+                "learn_level": 30
+            },
+            {
+                "name": "leer",
+                "learn_level": 23
+            },
+            {
+                "name": "bite",
+                "learn_level": 1
+            },
+            {
+                "name": "roar",
+                "learn_level": 1
+            },
+            {
+                "name": "ember",
+                "learn_level": 18
+            },
+            {
+                "name": "flamethrower",
+                "learn_level": 50
+            },
+            {
+                "name": "agility",
+                "learn_level": 39
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/58.png"
+    },
+    "arcanine": {
+        "id": 59,
+        "level": 1,
+        "types": [
+            "fire"
+        ],
+        "stats": {
+            "hp": 90,
+            "attack": 110,
+            "defense": 80,
+            "sp_attack": 100,
+            "sp_defense": 80,
+            "speed": 95
+        },
+        "moves": [
+            {
+                "name": "take-down",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "roar",
+                "learn_level": 1
+            },
+            {
+                "name": "ember",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/59.png"
+    },
+    "poliwag": {
+        "id": 60,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 40,
+            "attack": 50,
+            "defense": 40,
+            "sp_attack": 40,
+            "sp_defense": 40,
+            "speed": 90
+        },
+        "moves": [
+            {
+                "name": "double-slap",
+                "learn_level": 25
+            },
+            {
+                "name": "body-slam",
+                "learn_level": 31
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 19
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 45
+            },
+            {
+                "name": "hypnosis",
+                "learn_level": 16
+            },
+            {
+                "name": "amnesia",
+                "learn_level": 38
+            },
+            {
+                "name": "bubble",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/60.png"
+    },
+    "poliwhirl": {
+        "id": 61,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 65,
+            "defense": 65,
+            "sp_attack": 50,
+            "sp_defense": 50,
+            "speed": 90
+        },
+        "moves": [
+            {
+                "name": "double-slap",
+                "learn_level": 26
+            },
+            {
+                "name": "body-slam",
+                "learn_level": 33
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 1
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 19
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 49
+            },
+            {
+                "name": "hypnosis",
+                "learn_level": 1
+            },
+            {
+                "name": "hypnosis",
+                "learn_level": 16
+            },
+            {
+                "name": "amnesia",
+                "learn_level": 41
+            },
+            {
+                "name": "bubble",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/61.png"
+    },
+    "poliwrath": {
+        "id": 62,
+        "level": 1,
+        "types": [
+            "water",
+            "fighting"
+        ],
+        "stats": {
+            "hp": 90,
+            "attack": 95,
+            "defense": 95,
+            "sp_attack": 70,
+            "sp_defense": 90,
+            "speed": 70
+        },
+        "moves": [
+            {
+                "name": "double-slap",
+                "learn_level": 1
+            },
+            {
+                "name": "body-slam",
+                "learn_level": 1
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 1
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 19
+            },
+            {
+                "name": "hypnosis",
+                "learn_level": 1
+            },
+            {
+                "name": "hypnosis",
+                "learn_level": 16
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/62.png"
+    },
+    "abra": {
+        "id": 63,
+        "level": 1,
+        "types": [
+            "psychic"
+        ],
+        "stats": {
+            "hp": 25,
+            "attack": 20,
+            "defense": 15,
+            "sp_attack": 105,
+            "sp_defense": 55,
+            "speed": 90
+        },
+        "moves": [
+            {
+                "name": "teleport",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/63.png"
+    },
+    "kadabra": {
+        "id": 64,
+        "level": 1,
+        "types": [
+            "psychic"
+        ],
+        "stats": {
+            "hp": 40,
+            "attack": 35,
+            "defense": 30,
+            "sp_attack": 120,
+            "sp_defense": 70,
+            "speed": 105
+        },
+        "moves": [
+            {
+                "name": "disable",
+                "learn_level": 1
+            },
+            {
+                "name": "disable",
+                "learn_level": 20
+            },
+            {
+                "name": "psybeam",
+                "learn_level": 27
+            },
+            {
+                "name": "confusion",
+                "learn_level": 1
+            },
+            {
+                "name": "confusion",
+                "learn_level": 16
+            },
+            {
+                "name": "psychic",
+                "learn_level": 38
+            },
+            {
+                "name": "teleport",
+                "learn_level": 1
+            },
+            {
+                "name": "recover",
+                "learn_level": 31
+            },
+            {
+                "name": "reflect",
+                "learn_level": 42
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/64.png"
+    },
+    "alakazam": {
+        "id": 65,
+        "level": 1,
+        "types": [
+            "psychic"
+        ],
+        "stats": {
+            "hp": 55,
+            "attack": 50,
+            "defense": 45,
+            "sp_attack": 135,
+            "sp_defense": 95,
+            "speed": 120
+        },
+        "moves": [
+            {
+                "name": "disable",
+                "learn_level": 1
+            },
+            {
+                "name": "disable",
+                "learn_level": 20
+            },
+            {
+                "name": "psybeam",
+                "learn_level": 27
+            },
+            {
+                "name": "confusion",
+                "learn_level": 1
+            },
+            {
+                "name": "confusion",
+                "learn_level": 16
+            },
+            {
+                "name": "psychic",
+                "learn_level": 38
+            },
+            {
+                "name": "teleport",
+                "learn_level": 1
+            },
+            {
+                "name": "recover",
+                "learn_level": 31
+            },
+            {
+                "name": "reflect",
+                "learn_level": 42
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/65.png"
+    },
+    "machop": {
+        "id": 66,
+        "level": 1,
+        "types": [
+            "fighting"
+        ],
+        "stats": {
+            "hp": 70,
+            "attack": 80,
+            "defense": 50,
+            "sp_attack": 35,
+            "sp_defense": 35,
+            "speed": 35
+        },
+        "moves": [
+            {
+                "name": "karate-chop",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 25
+            },
+            {
+                "name": "submission",
+                "learn_level": 46
+            },
+            {
+                "name": "low-kick",
+                "learn_level": 20
+            },
+            {
+                "name": "seismic-toss",
+                "learn_level": 39
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 32
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/66.png"
+    },
+    "machoke": {
+        "id": 67,
+        "level": 1,
+        "types": [
+            "fighting"
+        ],
+        "stats": {
+            "hp": 80,
+            "attack": 100,
+            "defense": 70,
+            "sp_attack": 50,
+            "sp_defense": 60,
+            "speed": 45
+        },
+        "moves": [
+            {
+                "name": "karate-chop",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 25
+            },
+            {
+                "name": "submission",
+                "learn_level": 52
+            },
+            {
+                "name": "low-kick",
+                "learn_level": 1
+            },
+            {
+                "name": "low-kick",
+                "learn_level": 20
+            },
+            {
+                "name": "seismic-toss",
+                "learn_level": 44
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 36
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/67.png"
+    },
+    "machamp": {
+        "id": 68,
+        "level": 1,
+        "types": [
+            "fighting"
+        ],
+        "stats": {
+            "hp": 90,
+            "attack": 130,
+            "defense": 80,
+            "sp_attack": 65,
+            "sp_defense": 85,
+            "speed": 55
+        },
+        "moves": [
+            {
+                "name": "karate-chop",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 25
+            },
+            {
+                "name": "submission",
+                "learn_level": 52
+            },
+            {
+                "name": "low-kick",
+                "learn_level": 1
+            },
+            {
+                "name": "low-kick",
+                "learn_level": 20
+            },
+            {
+                "name": "seismic-toss",
+                "learn_level": 44
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 36
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/68.png"
+    },
+    "bellsprout": {
+        "id": 69,
+        "level": 1,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "stats": {
+            "hp": 50,
+            "attack": 75,
+            "defense": 35,
+            "sp_attack": 70,
+            "sp_defense": 30,
+            "speed": 40
+        },
+        "moves": [
+            {
+                "name": "slam",
+                "learn_level": 42
+            },
+            {
+                "name": "vine-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "wrap",
+                "learn_level": 13
+            },
+            {
+                "name": "acid",
+                "learn_level": 26
+            },
+            {
+                "name": "growth",
+                "learn_level": 1
+            },
+            {
+                "name": "razor-leaf",
+                "learn_level": 33
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 15
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 21
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 18
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/69.png"
+    },
+    "weepinbell": {
+        "id": 70,
+        "level": 1,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 90,
+            "defense": 50,
+            "sp_attack": 85,
+            "sp_defense": 45,
+            "speed": 55
+        },
+        "moves": [
+            {
+                "name": "slam",
+                "learn_level": 49
+            },
+            {
+                "name": "vine-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "wrap",
+                "learn_level": 1
+            },
+            {
+                "name": "wrap",
+                "learn_level": 13
+            },
+            {
+                "name": "acid",
+                "learn_level": 29
+            },
+            {
+                "name": "growth",
+                "learn_level": 1
+            },
+            {
+                "name": "razor-leaf",
+                "learn_level": 38
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 15
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 23
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 18
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/70.png"
+    },
+    "victreebel": {
+        "id": 71,
+        "level": 1,
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "stats": {
+            "hp": 80,
+            "attack": 105,
+            "defense": 65,
+            "sp_attack": 100,
+            "sp_defense": 70,
+            "speed": 70
+        },
+        "moves": [
+            {
+                "name": "wrap",
+                "learn_level": 13
+            },
+            {
+                "name": "acid",
+                "learn_level": 1
+            },
+            {
+                "name": "razor-leaf",
+                "learn_level": 1
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 15
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 1
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 1
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 18
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/71.png"
+    },
+    "tentacool": {
+        "id": 72,
+        "level": 1,
+        "types": [
+            "water",
+            "poison"
+        ],
+        "stats": {
+            "hp": 40,
+            "attack": 40,
+            "defense": 35,
+            "sp_attack": 50,
+            "sp_defense": 100,
+            "speed": 70
+        },
+        "moves": [
+            {
+                "name": "wrap",
+                "learn_level": 13
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 18
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 7
+            },
+            {
+                "name": "acid",
+                "learn_level": 1
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 22
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 48
+            },
+            {
+                "name": "screech",
+                "learn_level": 40
+            },
+            {
+                "name": "barrier",
+                "learn_level": 33
+            },
+            {
+                "name": "constrict",
+                "learn_level": 27
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/72.png"
+    },
+    "tentacruel": {
+        "id": 73,
+        "level": 1,
+        "types": [
+            "water",
+            "poison"
+        ],
+        "stats": {
+            "hp": 80,
+            "attack": 70,
+            "defense": 65,
+            "sp_attack": 80,
+            "sp_defense": 120,
+            "speed": 100
+        },
+        "moves": [
+            {
+                "name": "wrap",
+                "learn_level": 1
+            },
+            {
+                "name": "wrap",
+                "learn_level": 13
+            },
+            {
+                "name": "poison-sting",
+                "learn_level": 18
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 1
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 7
+            },
+            {
+                "name": "acid",
+                "learn_level": 1
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 22
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 50
+            },
+            {
+                "name": "screech",
+                "learn_level": 43
+            },
+            {
+                "name": "barrier",
+                "learn_level": 35
+            },
+            {
+                "name": "constrict",
+                "learn_level": 27
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/73.png"
+    },
+    "geodude": {
+        "id": 74,
+        "level": 1,
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "stats": {
+            "hp": 40,
+            "attack": 80,
+            "defense": 100,
+            "sp_attack": 30,
+            "sp_defense": 30,
+            "speed": 20
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "rock-throw",
+                "learn_level": 16
+            },
+            {
+                "name": "earthquake",
+                "learn_level": 31
+            },
+            {
+                "name": "harden",
+                "learn_level": 26
+            },
+            {
+                "name": "defense-curl",
+                "learn_level": 11
+            },
+            {
+                "name": "self-destruct",
+                "learn_level": 21
+            },
+            {
+                "name": "explosion",
+                "learn_level": 36
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/74.png"
+    },
+    "graveler": {
+        "id": 75,
+        "level": 1,
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "stats": {
+            "hp": 55,
+            "attack": 95,
+            "defense": 115,
+            "sp_attack": 45,
+            "sp_defense": 45,
+            "speed": 35
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "rock-throw",
+                "learn_level": 16
+            },
+            {
+                "name": "earthquake",
+                "learn_level": 36
+            },
+            {
+                "name": "harden",
+                "learn_level": 29
+            },
+            {
+                "name": "defense-curl",
+                "learn_level": 1
+            },
+            {
+                "name": "defense-curl",
+                "learn_level": 11
+            },
+            {
+                "name": "self-destruct",
+                "learn_level": 21
+            },
+            {
+                "name": "explosion",
+                "learn_level": 43
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/75.png"
+    },
+    "golem": {
+        "id": 76,
+        "level": 1,
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "stats": {
+            "hp": 80,
+            "attack": 120,
+            "defense": 130,
+            "sp_attack": 55,
+            "sp_defense": 65,
+            "speed": 45
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "rock-throw",
+                "learn_level": 16
+            },
+            {
+                "name": "earthquake",
+                "learn_level": 36
+            },
+            {
+                "name": "harden",
+                "learn_level": 29
+            },
+            {
+                "name": "defense-curl",
+                "learn_level": 1
+            },
+            {
+                "name": "defense-curl",
+                "learn_level": 11
+            },
+            {
+                "name": "self-destruct",
+                "learn_level": 21
+            },
+            {
+                "name": "explosion",
+                "learn_level": 43
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/76.png"
+    },
+    "ponyta": {
+        "id": 77,
+        "level": 1,
+        "types": [
+            "fire"
+        ],
+        "stats": {
+            "hp": 50,
+            "attack": 85,
+            "defense": 55,
+            "sp_attack": 65,
+            "sp_defense": 65,
+            "speed": 90
+        },
+        "moves": [
+            {
+                "name": "stomp",
+                "learn_level": 32
+            },
+            {
+                "name": "take-down",
+                "learn_level": 43
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 30
+            },
+            {
+                "name": "growl",
+                "learn_level": 35
+            },
+            {
+                "name": "ember",
+                "learn_level": 1
+            },
+            {
+                "name": "fire-spin",
+                "learn_level": 39
+            },
+            {
+                "name": "agility",
+                "learn_level": 48
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/77.png"
+    },
+    "rapidash": {
+        "id": 78,
+        "level": 1,
+        "types": [
+            "fire"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 100,
+            "defense": 70,
+            "sp_attack": 80,
+            "sp_defense": 80,
+            "speed": 105
+        },
+        "moves": [
+            {
+                "name": "stomp",
+                "learn_level": 1
+            },
+            {
+                "name": "stomp",
+                "learn_level": 32
+            },
+            {
+                "name": "take-down",
+                "learn_level": 47
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 30
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "growl",
+                "learn_level": 35
+            },
+            {
+                "name": "ember",
+                "learn_level": 1
+            },
+            {
+                "name": "fire-spin",
+                "learn_level": 39
+            },
+            {
+                "name": "agility",
+                "learn_level": 55
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/78.png"
+    },
+    "slowpoke": {
+        "id": 79,
+        "level": 1,
+        "types": [
+            "water",
+            "psychic"
+        ],
+        "stats": {
+            "hp": 90,
+            "attack": 65,
+            "defense": 65,
+            "sp_attack": 40,
+            "sp_defense": 40,
+            "speed": 15
+        },
+        "moves": [
+            {
+                "name": "headbutt",
+                "learn_level": 22
+            },
+            {
+                "name": "growl",
+                "learn_level": 27
+            },
+            {
+                "name": "disable",
+                "learn_level": 18
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 33
+            },
+            {
+                "name": "confusion",
+                "learn_level": 1
+            },
+            {
+                "name": "psychic",
+                "learn_level": 48
+            },
+            {
+                "name": "amnesia",
+                "learn_level": 40
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/79.png"
+    },
+    "slowbro": {
+        "id": 80,
+        "level": 1,
+        "types": [
+            "water",
+            "psychic"
+        ],
+        "stats": {
+            "hp": 95,
+            "attack": 75,
+            "defense": 110,
+            "sp_attack": 100,
+            "sp_defense": 80,
+            "speed": 30
+        },
+        "moves": [
+            {
+                "name": "headbutt",
+                "learn_level": 1
+            },
+            {
+                "name": "headbutt",
+                "learn_level": 22
+            },
+            {
+                "name": "growl",
+                "learn_level": 27
+            },
+            {
+                "name": "disable",
+                "learn_level": 1
+            },
+            {
+                "name": "disable",
+                "learn_level": 18
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 33
+            },
+            {
+                "name": "confusion",
+                "learn_level": 1
+            },
+            {
+                "name": "psychic",
+                "learn_level": 55
+            },
+            {
+                "name": "withdraw",
+                "learn_level": 37
+            },
+            {
+                "name": "amnesia",
+                "learn_level": 44
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/80.png"
+    },
+    "magnemite": {
+        "id": 81,
+        "level": 1,
+        "types": [
+            "electric",
+            "steel"
+        ],
+        "stats": {
+            "hp": 25,
+            "attack": 35,
+            "defense": 70,
+            "sp_attack": 95,
+            "sp_defense": 55,
+            "speed": 45
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 29
+            },
+            {
+                "name": "sonic-boom",
+                "learn_level": 21
+            },
+            {
+                "name": "thunder-shock",
+                "learn_level": 25
+            },
+            {
+                "name": "thunder-wave",
+                "learn_level": 35
+            },
+            {
+                "name": "screech",
+                "learn_level": 47
+            },
+            {
+                "name": "swift",
+                "learn_level": 41
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/81.png"
+    },
+    "magneton": {
+        "id": 82,
+        "level": 1,
+        "types": [
+            "electric",
+            "steel"
+        ],
+        "stats": {
+            "hp": 50,
+            "attack": 60,
+            "defense": 95,
+            "sp_attack": 120,
+            "sp_defense": 70,
+            "speed": 70
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 29
+            },
+            {
+                "name": "sonic-boom",
+                "learn_level": 1
+            },
+            {
+                "name": "sonic-boom",
+                "learn_level": 21
+            },
+            {
+                "name": "thunder-shock",
+                "learn_level": 1
+            },
+            {
+                "name": "thunder-shock",
+                "learn_level": 25
+            },
+            {
+                "name": "thunder-wave",
+                "learn_level": 38
+            },
+            {
+                "name": "screech",
+                "learn_level": 54
+            },
+            {
+                "name": "swift",
+                "learn_level": 46
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/82.png"
+    },
+    "farfetchd": {
+        "id": 83,
+        "level": 1,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "stats": {
+            "hp": 52,
+            "attack": 90,
+            "defense": 55,
+            "sp_attack": 58,
+            "sp_defense": 62,
+            "speed": 60
+        },
+        "moves": [
+            {
+                "name": "swords-dance",
+                "learn_level": 23
+            },
+            {
+                "name": "sand-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "fury-attack",
+                "learn_level": 15
+            },
+            {
+                "name": "leer",
+                "learn_level": 7
+            },
+            {
+                "name": "peck",
+                "learn_level": 1
+            },
+            {
+                "name": "agility",
+                "learn_level": 31
+            },
+            {
+                "name": "slash",
+                "learn_level": 39
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/83.png"
+    },
+    "doduo": {
+        "id": 84,
+        "level": 1,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "stats": {
+            "hp": 35,
+            "attack": 85,
+            "defense": 45,
+            "sp_attack": 35,
+            "sp_defense": 35,
+            "speed": 75
+        },
+        "moves": [
+            {
+                "name": "fury-attack",
+                "learn_level": 24
+            },
+            {
+                "name": "growl",
+                "learn_level": 20
+            },
+            {
+                "name": "peck",
+                "learn_level": 1
+            },
+            {
+                "name": "drill-peck",
+                "learn_level": 30
+            },
+            {
+                "name": "agility",
+                "learn_level": 44
+            },
+            {
+                "name": "rage",
+                "learn_level": 36
+            },
+            {
+                "name": "tri-attack",
+                "learn_level": 40
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/84.png"
+    },
+    "dodrio": {
+        "id": 85,
+        "level": 1,
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 110,
+            "defense": 70,
+            "sp_attack": 60,
+            "sp_defense": 60,
+            "speed": 110
+        },
+        "moves": [
+            {
+                "name": "fury-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "fury-attack",
+                "learn_level": 24
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "growl",
+                "learn_level": 20
+            },
+            {
+                "name": "peck",
+                "learn_level": 1
+            },
+            {
+                "name": "drill-peck",
+                "learn_level": 30
+            },
+            {
+                "name": "agility",
+                "learn_level": 51
+            },
+            {
+                "name": "rage",
+                "learn_level": 39
+            },
+            {
+                "name": "tri-attack",
+                "learn_level": 45
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/85.png"
+    },
+    "seel": {
+        "id": 86,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 45,
+            "defense": 55,
+            "sp_attack": 45,
+            "sp_defense": 70,
+            "speed": 45
+        },
+        "moves": [
+            {
+                "name": "headbutt",
+                "learn_level": 1
+            },
+            {
+                "name": "take-down",
+                "learn_level": 45
+            },
+            {
+                "name": "growl",
+                "learn_level": 30
+            },
+            {
+                "name": "ice-beam",
+                "learn_level": 50
+            },
+            {
+                "name": "aurora-beam",
+                "learn_level": 35
+            },
+            {
+                "name": "rest",
+                "learn_level": 40
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/86.png"
+    },
+    "dewgong": {
+        "id": 87,
+        "level": 1,
+        "types": [
+            "water",
+            "ice"
+        ],
+        "stats": {
+            "hp": 90,
+            "attack": 70,
+            "defense": 80,
+            "sp_attack": 70,
+            "sp_defense": 95,
+            "speed": 70
+        },
+        "moves": [
+            {
+                "name": "headbutt",
+                "learn_level": 1
+            },
+            {
+                "name": "take-down",
+                "learn_level": 50
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "growl",
+                "learn_level": 30
+            },
+            {
+                "name": "ice-beam",
+                "learn_level": 56
+            },
+            {
+                "name": "aurora-beam",
+                "learn_level": 1
+            },
+            {
+                "name": "aurora-beam",
+                "learn_level": 35
+            },
+            {
+                "name": "rest",
+                "learn_level": 44
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/87.png"
+    },
+    "grimer": {
+        "id": 88,
+        "level": 1,
+        "types": [
+            "poison"
+        ],
+        "stats": {
+            "hp": 80,
+            "attack": 80,
+            "defense": 50,
+            "sp_attack": 40,
+            "sp_defense": 50,
+            "speed": 25
+        },
+        "moves": [
+            {
+                "name": "pound",
+                "learn_level": 1
+            },
+            {
+                "name": "disable",
+                "learn_level": 1
+            },
+            {
+                "name": "screech",
+                "learn_level": 48
+            },
+            {
+                "name": "harden",
+                "learn_level": 42
+            },
+            {
+                "name": "minimize",
+                "learn_level": 33
+            },
+            {
+                "name": "sludge",
+                "learn_level": 37
+            },
+            {
+                "name": "poison-gas",
+                "learn_level": 30
+            },
+            {
+                "name": "acid-armor",
+                "learn_level": 55
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/88.png"
+    },
+    "muk": {
+        "id": 89,
+        "level": 1,
+        "types": [
+            "poison"
+        ],
+        "stats": {
+            "hp": 105,
+            "attack": 105,
+            "defense": 75,
+            "sp_attack": 65,
+            "sp_defense": 100,
+            "speed": 50
+        },
+        "moves": [
+            {
+                "name": "pound",
+                "learn_level": 1
+            },
+            {
+                "name": "disable",
+                "learn_level": 1
+            },
+            {
+                "name": "screech",
+                "learn_level": 53
+            },
+            {
+                "name": "harden",
+                "learn_level": 45
+            },
+            {
+                "name": "minimize",
+                "learn_level": 33
+            },
+            {
+                "name": "sludge",
+                "learn_level": 37
+            },
+            {
+                "name": "poison-gas",
+                "learn_level": 1
+            },
+            {
+                "name": "poison-gas",
+                "learn_level": 30
+            },
+            {
+                "name": "acid-armor",
+                "learn_level": 60
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/89.png"
+    },
+    "shellder": {
+        "id": 90,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 30,
+            "attack": 65,
+            "defense": 100,
+            "sp_attack": 45,
+            "sp_defense": 25,
+            "speed": 40
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 39
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 18
+            },
+            {
+                "name": "ice-beam",
+                "learn_level": 50
+            },
+            {
+                "name": "aurora-beam",
+                "learn_level": 30
+            },
+            {
+                "name": "withdraw",
+                "learn_level": 1
+            },
+            {
+                "name": "clamp",
+                "learn_level": 23
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/90.png"
+    },
+    "cloyster": {
+        "id": 91,
+        "level": 1,
+        "types": [
+            "water",
+            "ice"
+        ],
+        "stats": {
+            "hp": 50,
+            "attack": 95,
+            "defense": 180,
+            "sp_attack": 85,
+            "sp_defense": 45,
+            "speed": 70
+        },
+        "moves": [
+            {
+                "name": "supersonic",
+                "learn_level": 1
+            },
+            {
+                "name": "aurora-beam",
+                "learn_level": 1
+            },
+            {
+                "name": "withdraw",
+                "learn_level": 1
+            },
+            {
+                "name": "clamp",
+                "learn_level": 1
+            },
+            {
+                "name": "spike-cannon",
+                "learn_level": 50
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/91.png"
+    },
+    "gastly": {
+        "id": 92,
+        "level": 1,
+        "types": [
+            "ghost",
+            "poison"
+        ],
+        "stats": {
+            "hp": 30,
+            "attack": 35,
+            "defense": 30,
+            "sp_attack": 100,
+            "sp_defense": 35,
+            "speed": 80
+        },
+        "moves": [
+            {
+                "name": "hypnosis",
+                "learn_level": 27
+            },
+            {
+                "name": "night-shade",
+                "learn_level": 1
+            },
+            {
+                "name": "confuse-ray",
+                "learn_level": 1
+            },
+            {
+                "name": "lick",
+                "learn_level": 1
+            },
+            {
+                "name": "dream-eater",
+                "learn_level": 35
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/92.png"
+    },
+    "haunter": {
+        "id": 93,
+        "level": 1,
+        "types": [
+            "ghost",
+            "poison"
+        ],
+        "stats": {
+            "hp": 45,
+            "attack": 50,
+            "defense": 45,
+            "sp_attack": 115,
+            "sp_defense": 55,
+            "speed": 95
+        },
+        "moves": [
+            {
+                "name": "hypnosis",
+                "learn_level": 29
+            },
+            {
+                "name": "night-shade",
+                "learn_level": 1
+            },
+            {
+                "name": "confuse-ray",
+                "learn_level": 1
+            },
+            {
+                "name": "lick",
+                "learn_level": 1
+            },
+            {
+                "name": "dream-eater",
+                "learn_level": 38
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/93.png"
+    },
+    "gengar": {
+        "id": 94,
+        "level": 1,
+        "types": [
+            "ghost",
+            "poison"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 65,
+            "defense": 60,
+            "sp_attack": 130,
+            "sp_defense": 75,
+            "speed": 110
+        },
+        "moves": [
+            {
+                "name": "hypnosis",
+                "learn_level": 29
+            },
+            {
+                "name": "night-shade",
+                "learn_level": 1
+            },
+            {
+                "name": "confuse-ray",
+                "learn_level": 1
+            },
+            {
+                "name": "lick",
+                "learn_level": 1
+            },
+            {
+                "name": "dream-eater",
+                "learn_level": 38
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/94.png"
+    },
+    "onix": {
+        "id": 95,
+        "level": 1,
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "stats": {
+            "hp": 35,
+            "attack": 45,
+            "defense": 160,
+            "sp_attack": 30,
+            "sp_defense": 45,
+            "speed": 70
+        },
+        "moves": [
+            {
+                "name": "bind",
+                "learn_level": 15
+            },
+            {
+                "name": "slam",
+                "learn_level": 33
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "rock-throw",
+                "learn_level": 19
+            },
+            {
+                "name": "rage",
+                "learn_level": 25
+            },
+            {
+                "name": "screech",
+                "learn_level": 1
+            },
+            {
+                "name": "harden",
+                "learn_level": 43
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/95.png"
+    },
+    "drowzee": {
+        "id": 96,
+        "level": 1,
+        "types": [
+            "psychic"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 48,
+            "defense": 45,
+            "sp_attack": 43,
+            "sp_defense": 90,
+            "speed": 42
+        },
+        "moves": [
+            {
+                "name": "pound",
+                "learn_level": 1
+            },
+            {
+                "name": "headbutt",
+                "learn_level": 24
+            },
+            {
+                "name": "disable",
+                "learn_level": 12
+            },
+            {
+                "name": "confusion",
+                "learn_level": 17
+            },
+            {
+                "name": "psychic",
+                "learn_level": 32
+            },
+            {
+                "name": "hypnosis",
+                "learn_level": 1
+            },
+            {
+                "name": "meditate",
+                "learn_level": 37
+            },
+            {
+                "name": "poison-gas",
+                "learn_level": 29
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/96.png"
+    },
+    "hypno": {
+        "id": 97,
+        "level": 1,
+        "types": [
+            "psychic"
+        ],
+        "stats": {
+            "hp": 85,
+            "attack": 73,
+            "defense": 70,
+            "sp_attack": 73,
+            "sp_defense": 115,
+            "speed": 67
+        },
+        "moves": [
+            {
+                "name": "pound",
+                "learn_level": 1
+            },
+            {
+                "name": "headbutt",
+                "learn_level": 24
+            },
+            {
+                "name": "disable",
+                "learn_level": 1
+            },
+            {
+                "name": "disable",
+                "learn_level": 12
+            },
+            {
+                "name": "confusion",
+                "learn_level": 1
+            },
+            {
+                "name": "confusion",
+                "learn_level": 17
+            },
+            {
+                "name": "psychic",
+                "learn_level": 37
+            },
+            {
+                "name": "hypnosis",
+                "learn_level": 1
+            },
+            {
+                "name": "meditate",
+                "learn_level": 43
+            },
+            {
+                "name": "poison-gas",
+                "learn_level": 33
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/97.png"
+    },
+    "krabby": {
+        "id": 98,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 30,
+            "attack": 105,
+            "defense": 90,
+            "sp_attack": 25,
+            "sp_defense": 25,
+            "speed": 50
+        },
+        "moves": [
+            {
+                "name": "vice-grip",
+                "learn_level": 20
+            },
+            {
+                "name": "guillotine",
+                "learn_level": 25
+            },
+            {
+                "name": "stomp",
+                "learn_level": 30
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "harden",
+                "learn_level": 40
+            },
+            {
+                "name": "bubble",
+                "learn_level": 1
+            },
+            {
+                "name": "crabhammer",
+                "learn_level": 35
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/98.png"
+    },
+    "kingler": {
+        "id": 99,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 55,
+            "attack": 130,
+            "defense": 115,
+            "sp_attack": 50,
+            "sp_defense": 50,
+            "speed": 75
+        },
+        "moves": [
+            {
+                "name": "vice-grip",
+                "learn_level": 1
+            },
+            {
+                "name": "vice-grip",
+                "learn_level": 20
+            },
+            {
+                "name": "guillotine",
+                "learn_level": 25
+            },
+            {
+                "name": "stomp",
+                "learn_level": 34
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "harden",
+                "learn_level": 49
+            },
+            {
+                "name": "bubble",
+                "learn_level": 1
+            },
+            {
+                "name": "crabhammer",
+                "learn_level": 42
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/99.png"
+    },
+    "voltorb": {
+        "id": 100,
+        "level": 1,
+        "types": [
+            "electric"
+        ],
+        "stats": {
+            "hp": 40,
+            "attack": 30,
+            "defense": 50,
+            "sp_attack": 55,
+            "sp_defense": 55,
+            "speed": 100
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "sonic-boom",
+                "learn_level": 17
+            },
+            {
+                "name": "screech",
+                "learn_level": 1
+            },
+            {
+                "name": "light-screen",
+                "learn_level": 29
+            },
+            {
+                "name": "self-destruct",
+                "learn_level": 22
+            },
+            {
+                "name": "swift",
+                "learn_level": 36
+            },
+            {
+                "name": "explosion",
+                "learn_level": 43
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/100.png"
+    },
+    "electrode": {
+        "id": 101,
+        "level": 1,
+        "types": [
+            "electric"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 50,
+            "defense": 70,
+            "sp_attack": 80,
+            "sp_defense": 80,
+            "speed": 150
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "sonic-boom",
+                "learn_level": 1
+            },
+            {
+                "name": "sonic-boom",
+                "learn_level": 17
+            },
+            {
+                "name": "screech",
+                "learn_level": 1
+            },
+            {
+                "name": "light-screen",
+                "learn_level": 29
+            },
+            {
+                "name": "self-destruct",
+                "learn_level": 22
+            },
+            {
+                "name": "swift",
+                "learn_level": 40
+            },
+            {
+                "name": "explosion",
+                "learn_level": 50
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/101.png"
+    },
+    "exeggcute": {
+        "id": 102,
+        "level": 1,
+        "types": [
+            "grass",
+            "psychic"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 40,
+            "defense": 80,
+            "sp_attack": 60,
+            "sp_defense": 45,
+            "speed": 40
+        },
+        "moves": [
+            {
+                "name": "leech-seed",
+                "learn_level": 28
+            },
+            {
+                "name": "solar-beam",
+                "learn_level": 42
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 37
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 32
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 48
+            },
+            {
+                "name": "hypnosis",
+                "learn_level": 1
+            },
+            {
+                "name": "reflect",
+                "learn_level": 25
+            },
+            {
+                "name": "barrage",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/102.png"
+    },
+    "exeggutor": {
+        "id": 103,
+        "level": 1,
+        "types": [
+            "grass",
+            "psychic"
+        ],
+        "stats": {
+            "hp": 95,
+            "attack": 95,
+            "defense": 85,
+            "sp_attack": 125,
+            "sp_defense": 75,
+            "speed": 55
+        },
+        "moves": [
+            {
+                "name": "stomp",
+                "learn_level": 28
+            },
+            {
+                "name": "hypnosis",
+                "learn_level": 1
+            },
+            {
+                "name": "barrage",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/103.png"
+    },
+    "cubone": {
+        "id": 104,
+        "level": 1,
+        "types": [
+            "ground"
+        ],
+        "stats": {
+            "hp": 50,
+            "attack": 50,
+            "defense": 95,
+            "sp_attack": 40,
+            "sp_defense": 50,
+            "speed": 35
+        },
+        "moves": [
+            {
+                "name": "thrash",
+                "learn_level": 38
+            },
+            {
+                "name": "leer",
+                "learn_level": 25
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "rage",
+                "learn_level": 46
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 31
+            },
+            {
+                "name": "bone-club",
+                "learn_level": 1
+            },
+            {
+                "name": "bonemerang",
+                "learn_level": 43
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/104.png"
+    },
+    "marowak": {
+        "id": 105,
+        "level": 1,
+        "types": [
+            "ground"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 80,
+            "defense": 110,
+            "sp_attack": 50,
+            "sp_defense": 80,
+            "speed": 45
+        },
+        "moves": [
+            {
+                "name": "thrash",
+                "learn_level": 41
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 25
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "rage",
+                "learn_level": 55
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 1
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 33
+            },
+            {
+                "name": "bone-club",
+                "learn_level": 1
+            },
+            {
+                "name": "bonemerang",
+                "learn_level": 48
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/105.png"
+    },
+    "hitmonlee": {
+        "id": 106,
+        "level": 1,
+        "types": [
+            "fighting"
+        ],
+        "stats": {
+            "hp": 50,
+            "attack": 120,
+            "defense": 53,
+            "sp_attack": 35,
+            "sp_defense": 110,
+            "speed": 87
+        },
+        "moves": [
+            {
+                "name": "double-kick",
+                "learn_level": 1
+            },
+            {
+                "name": "mega-kick",
+                "learn_level": 53
+            },
+            {
+                "name": "jump-kick",
+                "learn_level": 38
+            },
+            {
+                "name": "rolling-kick",
+                "learn_level": 33
+            },
+            {
+                "name": "meditate",
+                "learn_level": 1
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 43
+            },
+            {
+                "name": "high-jump-kick",
+                "learn_level": 48
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/106.png"
+    },
+    "hitmonchan": {
+        "id": 107,
+        "level": 1,
+        "types": [
+            "fighting"
+        ],
+        "stats": {
+            "hp": 50,
+            "attack": 105,
+            "defense": 79,
+            "sp_attack": 35,
+            "sp_defense": 110,
+            "speed": 76
+        },
+        "moves": [
+            {
+                "name": "comet-punch",
+                "learn_level": 1
+            },
+            {
+                "name": "mega-punch",
+                "learn_level": 48
+            },
+            {
+                "name": "fire-punch",
+                "learn_level": 33
+            },
+            {
+                "name": "ice-punch",
+                "learn_level": 38
+            },
+            {
+                "name": "thunder-punch",
+                "learn_level": 43
+            },
+            {
+                "name": "counter",
+                "learn_level": 53
+            },
+            {
+                "name": "agility",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/107.png"
+    },
+    "lickitung": {
+        "id": 108,
+        "level": 1,
+        "types": [
+            "normal"
+        ],
+        "stats": {
+            "hp": 90,
+            "attack": 55,
+            "defense": 75,
+            "sp_attack": 60,
+            "sp_defense": 75,
+            "speed": 30
+        },
+        "moves": [
+            {
+                "name": "slam",
+                "learn_level": 31
+            },
+            {
+                "name": "stomp",
+                "learn_level": 7
+            },
+            {
+                "name": "wrap",
+                "learn_level": 1
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 1
+            },
+            {
+                "name": "disable",
+                "learn_level": 15
+            },
+            {
+                "name": "screech",
+                "learn_level": 39
+            },
+            {
+                "name": "defense-curl",
+                "learn_level": 23
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/108.png"
+    },
+    "koffing": {
+        "id": 109,
+        "level": 1,
+        "types": [
+            "poison"
+        ],
+        "stats": {
+            "hp": 40,
+            "attack": 65,
+            "defense": 95,
+            "sp_attack": 60,
+            "sp_defense": 45,
+            "speed": 35
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "smokescreen",
+                "learn_level": 37
+            },
+            {
+                "name": "haze",
+                "learn_level": 45
+            },
+            {
+                "name": "self-destruct",
+                "learn_level": 40
+            },
+            {
+                "name": "smog",
+                "learn_level": 1
+            },
+            {
+                "name": "sludge",
+                "learn_level": 32
+            },
+            {
+                "name": "explosion",
+                "learn_level": 48
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/109.png"
+    },
+    "weezing": {
+        "id": 110,
+        "level": 1,
+        "types": [
+            "poison"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 90,
+            "defense": 120,
+            "sp_attack": 85,
+            "sp_defense": 70,
+            "speed": 60
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "smokescreen",
+                "learn_level": 39
+            },
+            {
+                "name": "haze",
+                "learn_level": 49
+            },
+            {
+                "name": "self-destruct",
+                "learn_level": 43
+            },
+            {
+                "name": "smog",
+                "learn_level": 1
+            },
+            {
+                "name": "sludge",
+                "learn_level": 1
+            },
+            {
+                "name": "sludge",
+                "learn_level": 32
+            },
+            {
+                "name": "explosion",
+                "learn_level": 53
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/110.png"
+    },
+    "rhyhorn": {
+        "id": 111,
+        "level": 1,
+        "types": [
+            "ground",
+            "rock"
+        ],
+        "stats": {
+            "hp": 80,
+            "attack": 85,
+            "defense": 95,
+            "sp_attack": 30,
+            "sp_defense": 30,
+            "speed": 25
+        },
+        "moves": [
+            {
+                "name": "stomp",
+                "learn_level": 30
+            },
+            {
+                "name": "horn-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "fury-attack",
+                "learn_level": 40
+            },
+            {
+                "name": "horn-drill",
+                "learn_level": 45
+            },
+            {
+                "name": "take-down",
+                "learn_level": 55
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 35
+            },
+            {
+                "name": "leer",
+                "learn_level": 50
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/111.png"
+    },
+    "rhydon": {
+        "id": 112,
+        "level": 1,
+        "types": [
+            "ground",
+            "rock"
+        ],
+        "stats": {
+            "hp": 105,
+            "attack": 130,
+            "defense": 120,
+            "sp_attack": 45,
+            "sp_defense": 45,
+            "speed": 40
+        },
+        "moves": [
+            {
+                "name": "stomp",
+                "learn_level": 1
+            },
+            {
+                "name": "stomp",
+                "learn_level": 30
+            },
+            {
+                "name": "horn-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "fury-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "fury-attack",
+                "learn_level": 40
+            },
+            {
+                "name": "horn-drill",
+                "learn_level": 48
+            },
+            {
+                "name": "take-down",
+                "learn_level": 64
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 35
+            },
+            {
+                "name": "leer",
+                "learn_level": 55
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/112.png"
+    },
+    "chansey": {
+        "id": 113,
+        "level": 1,
+        "types": [
+            "normal"
+        ],
+        "stats": {
+            "hp": 250,
+            "attack": 5,
+            "defense": 5,
+            "sp_attack": 35,
+            "sp_defense": 105,
+            "speed": 50
+        },
+        "moves": [
+            {
+                "name": "pound",
+                "learn_level": 1
+            },
+            {
+                "name": "double-slap",
+                "learn_level": 1
+            },
+            {
+                "name": "double-edge",
+                "learn_level": 54
+            },
+            {
+                "name": "growl",
+                "learn_level": 30
+            },
+            {
+                "name": "sing",
+                "learn_level": 24
+            },
+            {
+                "name": "minimize",
+                "learn_level": 38
+            },
+            {
+                "name": "defense-curl",
+                "learn_level": 44
+            },
+            {
+                "name": "light-screen",
+                "learn_level": 48
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/113.png"
+    },
+    "tangela": {
+        "id": 114,
+        "level": 1,
+        "types": [
+            "grass"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 55,
+            "defense": 115,
+            "sp_attack": 100,
+            "sp_defense": 40,
+            "speed": 60
+        },
+        "moves": [
+            {
+                "name": "bind",
+                "learn_level": 1
+            },
+            {
+                "name": "slam",
+                "learn_level": 45
+            },
+            {
+                "name": "absorb",
+                "learn_level": 29
+            },
+            {
+                "name": "growth",
+                "learn_level": 49
+            },
+            {
+                "name": "poison-powder",
+                "learn_level": 32
+            },
+            {
+                "name": "stun-spore",
+                "learn_level": 36
+            },
+            {
+                "name": "sleep-powder",
+                "learn_level": 39
+            },
+            {
+                "name": "constrict",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/114.png"
+    },
+    "kangaskhan": {
+        "id": 115,
+        "level": 1,
+        "types": [
+            "normal"
+        ],
+        "stats": {
+            "hp": 105,
+            "attack": 95,
+            "defense": 80,
+            "sp_attack": 40,
+            "sp_defense": 80,
+            "speed": 90
+        },
+        "moves": [
+            {
+                "name": "comet-punch",
+                "learn_level": 1
+            },
+            {
+                "name": "mega-punch",
+                "learn_level": 36
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 31
+            },
+            {
+                "name": "leer",
+                "learn_level": 41
+            },
+            {
+                "name": "bite",
+                "learn_level": 26
+            },
+            {
+                "name": "rage",
+                "learn_level": 1
+            },
+            {
+                "name": "dizzy-punch",
+                "learn_level": 46
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/115.png"
+    },
+    "horsea": {
+        "id": 116,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 30,
+            "attack": 40,
+            "defense": 70,
+            "sp_attack": 70,
+            "sp_defense": 25,
+            "speed": 60
+        },
+        "moves": [
+            {
+                "name": "leer",
+                "learn_level": 24
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 30
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 45
+            },
+            {
+                "name": "agility",
+                "learn_level": 37
+            },
+            {
+                "name": "smokescreen",
+                "learn_level": 19
+            },
+            {
+                "name": "bubble",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/116.png"
+    },
+    "seadra": {
+        "id": 117,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 55,
+            "attack": 65,
+            "defense": 95,
+            "sp_attack": 95,
+            "sp_defense": 45,
+            "speed": 85
+        },
+        "moves": [
+            {
+                "name": "leer",
+                "learn_level": 24
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 30
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 52
+            },
+            {
+                "name": "agility",
+                "learn_level": 41
+            },
+            {
+                "name": "smokescreen",
+                "learn_level": 1
+            },
+            {
+                "name": "smokescreen",
+                "learn_level": 19
+            },
+            {
+                "name": "bubble",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/117.png"
+    },
+    "goldeen": {
+        "id": 118,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 45,
+            "attack": 67,
+            "defense": 60,
+            "sp_attack": 35,
+            "sp_defense": 50,
+            "speed": 63
+        },
+        "moves": [
+            {
+                "name": "horn-attack",
+                "learn_level": 24
+            },
+            {
+                "name": "fury-attack",
+                "learn_level": 30
+            },
+            {
+                "name": "horn-drill",
+                "learn_level": 45
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 19
+            },
+            {
+                "name": "peck",
+                "learn_level": 1
+            },
+            {
+                "name": "agility",
+                "learn_level": 54
+            },
+            {
+                "name": "waterfall",
+                "learn_level": 37
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/118.png"
+    },
+    "seaking": {
+        "id": 119,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 80,
+            "attack": 92,
+            "defense": 65,
+            "sp_attack": 65,
+            "sp_defense": 80,
+            "speed": 68
+        },
+        "moves": [
+            {
+                "name": "horn-attack",
+                "learn_level": 24
+            },
+            {
+                "name": "fury-attack",
+                "learn_level": 30
+            },
+            {
+                "name": "horn-drill",
+                "learn_level": 48
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 1
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 1
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 19
+            },
+            {
+                "name": "peck",
+                "learn_level": 1
+            },
+            {
+                "name": "agility",
+                "learn_level": 54
+            },
+            {
+                "name": "waterfall",
+                "learn_level": 39
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/119.png"
+    },
+    "staryu": {
+        "id": 120,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 30,
+            "attack": 45,
+            "defense": 55,
+            "sp_attack": 70,
+            "sp_defense": 55,
+            "speed": 85
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 17
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 47
+            },
+            {
+                "name": "recover",
+                "learn_level": 27
+            },
+            {
+                "name": "harden",
+                "learn_level": 22
+            },
+            {
+                "name": "minimize",
+                "learn_level": 37
+            },
+            {
+                "name": "light-screen",
+                "learn_level": 42
+            },
+            {
+                "name": "swift",
+                "learn_level": 32
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/120.png"
+    },
+    "starmie": {
+        "id": 121,
+        "level": 1,
+        "types": [
+            "water",
+            "psychic"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 75,
+            "defense": 85,
+            "sp_attack": 100,
+            "sp_defense": 85,
+            "speed": 115
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 1
+            },
+            {
+                "name": "harden",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/121.png"
+    },
+    "mr-mime": {
+        "id": 122,
+        "level": 1,
+        "types": [
+            "psychic",
+            "fairy"
+        ],
+        "stats": {
+            "hp": 40,
+            "attack": 45,
+            "defense": 65,
+            "sp_attack": 100,
+            "sp_defense": 120,
+            "speed": 90
+        },
+        "moves": [
+            {
+                "name": "double-slap",
+                "learn_level": 31
+            },
+            {
+                "name": "confusion",
+                "learn_level": 1
+            },
+            {
+                "name": "confusion",
+                "learn_level": 15
+            },
+            {
+                "name": "meditate",
+                "learn_level": 39
+            },
+            {
+                "name": "barrier",
+                "learn_level": 1
+            },
+            {
+                "name": "light-screen",
+                "learn_level": 23
+            },
+            {
+                "name": "substitute",
+                "learn_level": 47
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/122.png"
+    },
+    "scyther": {
+        "id": 123,
+        "level": 1,
+        "types": [
+            "bug",
+            "flying"
+        ],
+        "stats": {
+            "hp": 70,
+            "attack": 110,
+            "defense": 80,
+            "sp_attack": 55,
+            "sp_defense": 80,
+            "speed": 105
+        },
+        "moves": [
+            {
+                "name": "swords-dance",
+                "learn_level": 35
+            },
+            {
+                "name": "leer",
+                "learn_level": 17
+            },
+            {
+                "name": "agility",
+                "learn_level": 42
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "double-team",
+                "learn_level": 24
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 20
+            },
+            {
+                "name": "slash",
+                "learn_level": 29
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/123.png"
+    },
+    "jynx": {
+        "id": 124,
+        "level": 1,
+        "types": [
+            "ice",
+            "psychic"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 50,
+            "defense": 35,
+            "sp_attack": 115,
+            "sp_defense": 95,
+            "speed": 95
+        },
+        "moves": [
+            {
+                "name": "pound",
+                "learn_level": 1
+            },
+            {
+                "name": "double-slap",
+                "learn_level": 23
+            },
+            {
+                "name": "ice-punch",
+                "learn_level": 31
+            },
+            {
+                "name": "body-slam",
+                "learn_level": 39
+            },
+            {
+                "name": "thrash",
+                "learn_level": 47
+            },
+            {
+                "name": "blizzard",
+                "learn_level": 58
+            },
+            {
+                "name": "lick",
+                "learn_level": 18
+            },
+            {
+                "name": "lovely-kiss",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/124.png"
+    },
+    "electabuzz": {
+        "id": 125,
+        "level": 1,
+        "types": [
+            "electric"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 83,
+            "defense": 57,
+            "sp_attack": 95,
+            "sp_defense": 85,
+            "speed": 105
+        },
+        "moves": [
+            {
+                "name": "thunder-punch",
+                "learn_level": 42
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "thunder-shock",
+                "learn_level": 34
+            },
+            {
+                "name": "thunder",
+                "learn_level": 54
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "screech",
+                "learn_level": 37
+            },
+            {
+                "name": "light-screen",
+                "learn_level": 49
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/125.png"
+    },
+    "magmar": {
+        "id": 126,
+        "level": 1,
+        "types": [
+            "fire"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 95,
+            "defense": 57,
+            "sp_attack": 100,
+            "sp_defense": 85,
+            "speed": 93
+        },
+        "moves": [
+            {
+                "name": "fire-punch",
+                "learn_level": 43
+            },
+            {
+                "name": "leer",
+                "learn_level": 36
+            },
+            {
+                "name": "ember",
+                "learn_level": 1
+            },
+            {
+                "name": "flamethrower",
+                "learn_level": 55
+            },
+            {
+                "name": "smokescreen",
+                "learn_level": 48
+            },
+            {
+                "name": "confuse-ray",
+                "learn_level": 39
+            },
+            {
+                "name": "smog",
+                "learn_level": 52
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/126.png"
+    },
+    "pinsir": {
+        "id": 127,
+        "level": 1,
+        "types": [
+            "bug"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 125,
+            "defense": 100,
+            "sp_attack": 55,
+            "sp_defense": 70,
+            "speed": 85
+        },
+        "moves": [
+            {
+                "name": "vice-grip",
+                "learn_level": 1
+            },
+            {
+                "name": "guillotine",
+                "learn_level": 30
+            },
+            {
+                "name": "swords-dance",
+                "learn_level": 54
+            },
+            {
+                "name": "seismic-toss",
+                "learn_level": 25
+            },
+            {
+                "name": "harden",
+                "learn_level": 43
+            },
+            {
+                "name": "focus-energy",
+                "learn_level": 36
+            },
+            {
+                "name": "slash",
+                "learn_level": 49
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/127.png"
+    },
+    "tauros": {
+        "id": 128,
+        "level": 1,
+        "types": [
+            "normal"
+        ],
+        "stats": {
+            "hp": 75,
+            "attack": 100,
+            "defense": 95,
+            "sp_attack": 40,
+            "sp_defense": 70,
+            "speed": 110
+        },
+        "moves": [
+            {
+                "name": "stomp",
+                "learn_level": 21
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "take-down",
+                "learn_level": 51
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 28
+            },
+            {
+                "name": "leer",
+                "learn_level": 35
+            },
+            {
+                "name": "rage",
+                "learn_level": 44
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/128.png"
+    },
+    "magikarp": {
+        "id": 129,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 20,
+            "attack": 10,
+            "defense": 55,
+            "sp_attack": 15,
+            "sp_defense": 20,
+            "speed": 80
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 15
+            },
+            {
+                "name": "splash",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/129.png"
+    },
+    "gyarados": {
+        "id": 130,
+        "level": 1,
+        "types": [
+            "water",
+            "flying"
+        ],
+        "stats": {
+            "hp": 95,
+            "attack": 125,
+            "defense": 79,
+            "sp_attack": 60,
+            "sp_defense": 100,
+            "speed": 81
+        },
+        "moves": [
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 32
+            },
+            {
+                "name": "bite",
+                "learn_level": 1
+            },
+            {
+                "name": "bite",
+                "learn_level": 20
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 1
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 41
+            },
+            {
+                "name": "hyper-beam",
+                "learn_level": 52
+            },
+            {
+                "name": "dragon-rage",
+                "learn_level": 1
+            },
+            {
+                "name": "dragon-rage",
+                "learn_level": 25
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/130.png"
+    },
+    "lapras": {
+        "id": 131,
+        "level": 1,
+        "types": [
+            "water",
+            "ice"
+        ],
+        "stats": {
+            "hp": 130,
+            "attack": 85,
+            "defense": 80,
+            "sp_attack": 85,
+            "sp_defense": 95,
+            "speed": 60
+        },
+        "moves": [
+            {
+                "name": "body-slam",
+                "learn_level": 25
+            },
+            {
+                "name": "growl",
+                "learn_level": 1
+            },
+            {
+                "name": "sing",
+                "learn_level": 16
+            },
+            {
+                "name": "mist",
+                "learn_level": 20
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 1
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 46
+            },
+            {
+                "name": "ice-beam",
+                "learn_level": 38
+            },
+            {
+                "name": "confuse-ray",
+                "learn_level": 31
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/131.png"
+    },
+    "ditto": {
+        "id": 132,
+        "level": 1,
+        "types": [
+            "normal"
+        ],
+        "stats": {
+            "hp": 48,
+            "attack": 48,
+            "defense": 48,
+            "sp_attack": 48,
+            "sp_defense": 48,
+            "speed": 48
+        },
+        "moves": [
+            {
+                "name": "transform",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png"
+    },
+    "eevee": {
+        "id": 133,
+        "level": 1,
+        "types": [
+            "normal"
+        ],
+        "stats": {
+            "hp": 55,
+            "attack": 55,
+            "defense": 50,
+            "sp_attack": 45,
+            "sp_defense": 65,
+            "speed": 55
+        },
+        "moves": [
+            {
+                "name": "sand-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "take-down",
+                "learn_level": 45
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 31
+            },
+            {
+                "name": "bite",
+                "learn_level": 37
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 27
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/133.png"
+    },
+    "vaporeon": {
+        "id": 134,
+        "level": 1,
+        "types": [
+            "water"
+        ],
+        "stats": {
+            "hp": 130,
+            "attack": 65,
+            "defense": 60,
+            "sp_attack": 110,
+            "sp_defense": 95,
+            "speed": 65
+        },
+        "moves": [
+            {
+                "name": "sand-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 37
+            },
+            {
+                "name": "bite",
+                "learn_level": 40
+            },
+            {
+                "name": "mist",
+                "learn_level": 48
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 1
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 31
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 54
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 27
+            },
+            {
+                "name": "haze",
+                "learn_level": 44
+            },
+            {
+                "name": "acid-armor",
+                "learn_level": 42
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/134.png"
+    },
+    "jolteon": {
+        "id": 135,
+        "level": 1,
+        "types": [
+            "electric"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 65,
+            "defense": 60,
+            "sp_attack": 110,
+            "sp_defense": 95,
+            "speed": 130
+        },
+        "moves": [
+            {
+                "name": "double-kick",
+                "learn_level": 42
+            },
+            {
+                "name": "sand-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 37
+            },
+            {
+                "name": "pin-missile",
+                "learn_level": 48
+            },
+            {
+                "name": "thunder-shock",
+                "learn_level": 1
+            },
+            {
+                "name": "thunder-shock",
+                "learn_level": 31
+            },
+            {
+                "name": "thunder-wave",
+                "learn_level": 40
+            },
+            {
+                "name": "thunder",
+                "learn_level": 54
+            },
+            {
+                "name": "agility",
+                "learn_level": 44
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 27
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/135.png"
+    },
+    "flareon": {
+        "id": 136,
+        "level": 1,
+        "types": [
+            "fire"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 130,
+            "defense": 60,
+            "sp_attack": 95,
+            "sp_defense": 110,
+            "speed": 65
+        },
+        "moves": [
+            {
+                "name": "sand-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "tail-whip",
+                "learn_level": 37
+            },
+            {
+                "name": "leer",
+                "learn_level": 42
+            },
+            {
+                "name": "bite",
+                "learn_level": 40
+            },
+            {
+                "name": "ember",
+                "learn_level": 1
+            },
+            {
+                "name": "ember",
+                "learn_level": 31
+            },
+            {
+                "name": "flamethrower",
+                "learn_level": 54
+            },
+            {
+                "name": "fire-spin",
+                "learn_level": 44
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "quick-attack",
+                "learn_level": 27
+            },
+            {
+                "name": "rage",
+                "learn_level": 48
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/136.png"
+    },
+    "porygon": {
+        "id": 137,
+        "level": 1,
+        "types": [
+            "normal"
+        ],
+        "stats": {
+            "hp": 65,
+            "attack": 60,
+            "defense": 70,
+            "sp_attack": 85,
+            "sp_defense": 75,
+            "speed": 40
+        },
+        "moves": [
+            {
+                "name": "tackle",
+                "learn_level": 1
+            },
+            {
+                "name": "psybeam",
+                "learn_level": 23
+            },
+            {
+                "name": "agility",
+                "learn_level": 35
+            },
+            {
+                "name": "recover",
+                "learn_level": 28
+            },
+            {
+                "name": "sharpen",
+                "learn_level": 1
+            },
+            {
+                "name": "conversion",
+                "learn_level": 1
+            },
+            {
+                "name": "tri-attack",
+                "learn_level": 42
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/137.png"
+    },
+    "omanyte": {
+        "id": 138,
+        "level": 1,
+        "types": [
+            "rock",
+            "water"
+        ],
+        "stats": {
+            "hp": 35,
+            "attack": 40,
+            "defense": 100,
+            "sp_attack": 90,
+            "sp_defense": 55,
+            "speed": 35
+        },
+        "moves": [
+            {
+                "name": "horn-attack",
+                "learn_level": 34
+            },
+            {
+                "name": "leer",
+                "learn_level": 39
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 1
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 53
+            },
+            {
+                "name": "withdraw",
+                "learn_level": 1
+            },
+            {
+                "name": "spike-cannon",
+                "learn_level": 46
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/138.png"
+    },
+    "omastar": {
+        "id": 139,
+        "level": 1,
+        "types": [
+            "rock",
+            "water"
+        ],
+        "stats": {
+            "hp": 70,
+            "attack": 60,
+            "defense": 125,
+            "sp_attack": 115,
+            "sp_defense": 70,
+            "speed": 55
+        },
+        "moves": [
+            {
+                "name": "horn-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "horn-attack",
+                "learn_level": 34
+            },
+            {
+                "name": "leer",
+                "learn_level": 39
+            },
+            {
+                "name": "water-gun",
+                "learn_level": 1
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 49
+            },
+            {
+                "name": "withdraw",
+                "learn_level": 1
+            },
+            {
+                "name": "spike-cannon",
+                "learn_level": 44
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/139.png"
+    },
+    "kabuto": {
+        "id": 140,
+        "level": 1,
+        "types": [
+            "rock",
+            "water"
+        ],
+        "stats": {
+            "hp": 30,
+            "attack": 80,
+            "defense": 90,
+            "sp_attack": 55,
+            "sp_defense": 45,
+            "speed": 55
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 44
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 49
+            },
+            {
+                "name": "absorb",
+                "learn_level": 34
+            },
+            {
+                "name": "harden",
+                "learn_level": 1
+            },
+            {
+                "name": "slash",
+                "learn_level": 39
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/140.png"
+    },
+    "kabutops": {
+        "id": 141,
+        "level": 1,
+        "types": [
+            "rock",
+            "water"
+        ],
+        "stats": {
+            "hp": 60,
+            "attack": 115,
+            "defense": 105,
+            "sp_attack": 65,
+            "sp_defense": 70,
+            "speed": 80
+        },
+        "moves": [
+            {
+                "name": "scratch",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 46
+            },
+            {
+                "name": "hydro-pump",
+                "learn_level": 53
+            },
+            {
+                "name": "absorb",
+                "learn_level": 1
+            },
+            {
+                "name": "absorb",
+                "learn_level": 34
+            },
+            {
+                "name": "harden",
+                "learn_level": 1
+            },
+            {
+                "name": "slash",
+                "learn_level": 39
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/141.png"
+    },
+    "aerodactyl": {
+        "id": 142,
+        "level": 1,
+        "types": [
+            "rock",
+            "flying"
+        ],
+        "stats": {
+            "hp": 80,
+            "attack": 105,
+            "defense": 65,
+            "sp_attack": 60,
+            "sp_defense": 75,
+            "speed": 130
+        },
+        "moves": [
+            {
+                "name": "wing-attack",
+                "learn_level": 1
+            },
+            {
+                "name": "take-down",
+                "learn_level": 45
+            },
+            {
+                "name": "bite",
+                "learn_level": 38
+            },
+            {
+                "name": "supersonic",
+                "learn_level": 33
+            },
+            {
+                "name": "hyper-beam",
+                "learn_level": 54
+            },
+            {
+                "name": "agility",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/142.png"
+    },
+    "snorlax": {
+        "id": 143,
+        "level": 1,
+        "types": [
+            "normal"
+        ],
+        "stats": {
+            "hp": 160,
+            "attack": 110,
+            "defense": 65,
+            "sp_attack": 65,
+            "sp_defense": 110,
+            "speed": 30
+        },
+        "moves": [
+            {
+                "name": "headbutt",
+                "learn_level": 1
+            },
+            {
+                "name": "body-slam",
+                "learn_level": 35
+            },
+            {
+                "name": "double-edge",
+                "learn_level": 48
+            },
+            {
+                "name": "hyper-beam",
+                "learn_level": 56
+            },
+            {
+                "name": "harden",
+                "learn_level": 41
+            },
+            {
+                "name": "amnesia",
+                "learn_level": 1
+            },
+            {
+                "name": "rest",
+                "learn_level": 1
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/143.png"
+    },
+    "articuno": {
+        "id": 144,
+        "level": 1,
+        "types": [
+            "ice",
+            "flying"
+        ],
+        "stats": {
+            "hp": 90,
+            "attack": 85,
+            "defense": 100,
+            "sp_attack": 95,
+            "sp_defense": 125,
+            "speed": 85
+        },
+        "moves": [
+            {
+                "name": "mist",
+                "learn_level": 60
+            },
+            {
+                "name": "ice-beam",
+                "learn_level": 1
+            },
+            {
+                "name": "blizzard",
+                "learn_level": 51
+            },
+            {
+                "name": "peck",
+                "learn_level": 1
+            },
+            {
+                "name": "agility",
+                "learn_level": 55
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/144.png"
+    },
+    "zapdos": {
+        "id": 145,
+        "level": 1,
+        "types": [
+            "electric",
+            "flying"
+        ],
+        "stats": {
+            "hp": 90,
+            "attack": 90,
+            "defense": 85,
+            "sp_attack": 125,
+            "sp_defense": 90,
+            "speed": 100
+        },
+        "moves": [
+            {
+                "name": "drill-peck",
+                "learn_level": 1
+            },
+            {
+                "name": "thunder-shock",
+                "learn_level": 1
+            },
+            {
+                "name": "thunder",
+                "learn_level": 51
+            },
+            {
+                "name": "agility",
+                "learn_level": 55
+            },
+            {
+                "name": "light-screen",
+                "learn_level": 60
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/145.png"
+    },
+    "moltres": {
+        "id": 146,
+        "level": 1,
+        "types": [
+            "fire",
+            "flying"
+        ],
+        "stats": {
+            "hp": 90,
+            "attack": 100,
+            "defense": 90,
+            "sp_attack": 125,
+            "sp_defense": 85,
+            "speed": 90
+        },
+        "moves": [
+            {
+                "name": "leer",
+                "learn_level": 51
+            },
+            {
+                "name": "peck",
+                "learn_level": 1
+            },
+            {
+                "name": "fire-spin",
+                "learn_level": 1
+            },
+            {
+                "name": "agility",
+                "learn_level": 55
+            },
+            {
+                "name": "sky-attack",
+                "learn_level": 60
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/146.png"
+    },
+    "dratini": {
+        "id": 147,
+        "level": 1,
+        "types": [
+            "dragon"
+        ],
+        "stats": {
+            "hp": 41,
+            "attack": 64,
+            "defense": 45,
+            "sp_attack": 50,
+            "sp_defense": 50,
+            "speed": 50
+        },
+        "moves": [
+            {
+                "name": "slam",
+                "learn_level": 30
+            },
+            {
+                "name": "wrap",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "hyper-beam",
+                "learn_level": 50
+            },
+            {
+                "name": "dragon-rage",
+                "learn_level": 40
+            },
+            {
+                "name": "thunder-wave",
+                "learn_level": 10
+            },
+            {
+                "name": "agility",
+                "learn_level": 20
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/147.png"
+    },
+    "dragonair": {
+        "id": 148,
+        "level": 1,
+        "types": [
+            "dragon"
+        ],
+        "stats": {
+            "hp": 61,
+            "attack": 84,
+            "defense": 65,
+            "sp_attack": 70,
+            "sp_defense": 70,
+            "speed": 70
+        },
+        "moves": [
+            {
+                "name": "slam",
+                "learn_level": 35
+            },
+            {
+                "name": "wrap",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "hyper-beam",
+                "learn_level": 55
+            },
+            {
+                "name": "dragon-rage",
+                "learn_level": 45
+            },
+            {
+                "name": "thunder-wave",
+                "learn_level": 1
+            },
+            {
+                "name": "thunder-wave",
+                "learn_level": 10
+            },
+            {
+                "name": "agility",
+                "learn_level": 20
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/148.png"
+    },
+    "dragonite": {
+        "id": 149,
+        "level": 1,
+        "types": [
+            "dragon",
+            "flying"
+        ],
+        "stats": {
+            "hp": 91,
+            "attack": 134,
+            "defense": 95,
+            "sp_attack": 100,
+            "sp_defense": 100,
+            "speed": 80
+        },
+        "moves": [
+            {
+                "name": "slam",
+                "learn_level": 35
+            },
+            {
+                "name": "wrap",
+                "learn_level": 1
+            },
+            {
+                "name": "leer",
+                "learn_level": 1
+            },
+            {
+                "name": "hyper-beam",
+                "learn_level": 60
+            },
+            {
+                "name": "dragon-rage",
+                "learn_level": 45
+            },
+            {
+                "name": "thunder-wave",
+                "learn_level": 1
+            },
+            {
+                "name": "thunder-wave",
+                "learn_level": 10
+            },
+            {
+                "name": "agility",
+                "learn_level": 1
+            },
+            {
+                "name": "agility",
+                "learn_level": 20
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/149.png"
+    },
+    "mewtwo": {
+        "id": 150,
+        "level": 1,
+        "types": [
+            "psychic"
+        ],
+        "stats": {
+            "hp": 106,
+            "attack": 110,
+            "defense": 90,
+            "sp_attack": 154,
+            "sp_defense": 90,
+            "speed": 130
+        },
+        "moves": [
+            {
+                "name": "disable",
+                "learn_level": 1
+            },
+            {
+                "name": "mist",
+                "learn_level": 75
+            },
+            {
+                "name": "confusion",
+                "learn_level": 1
+            },
+            {
+                "name": "psychic",
+                "learn_level": 1
+            },
+            {
+                "name": "psychic",
+                "learn_level": 66
+            },
+            {
+                "name": "recover",
+                "learn_level": 70
+            },
+            {
+                "name": "barrier",
+                "learn_level": 63
+            },
+            {
+                "name": "swift",
+                "learn_level": 1
+            },
+            {
+                "name": "amnesia",
+                "learn_level": 81
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/150.png"
+    },
+    "mew": {
+        "id": 151,
+        "level": 1,
+        "types": [
+            "psychic"
+        ],
+        "stats": {
+            "hp": 100,
+            "attack": 100,
+            "defense": 100,
+            "sp_attack": 100,
+            "sp_defense": 100,
+            "speed": 100
+        },
+        "moves": [
+            {
+                "name": "pound",
+                "learn_level": 1
+            },
+            {
+                "name": "mega-punch",
+                "learn_level": 20
+            },
+            {
+                "name": "psychic",
+                "learn_level": 40
+            },
+            {
+                "name": "metronome",
+                "learn_level": 30
+            },
+            {
+                "name": "transform",
+                "learn_level": 10
+            }
+        ],
+        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/151.png"
+    }
+}

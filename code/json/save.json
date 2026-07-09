@@ -1,0 +1,128 @@
+{
+    "inventory": {
+        "pokeball": 147,
+        "medicine": 0,
+        "pokedex": {
+            "pokemons": {
+                "pikachu": {
+                    "name": "pikachu",
+                    "stats": {
+                        "id": 25,
+                        "level": 1,
+                        "types": [
+                            "electric"
+                        ],
+                        "stats": {
+                            "hp": 35,
+                            "attack": 55,
+                            "defense": 40,
+                            "sp_attack": 50,
+                            "sp_defense": 50,
+                            "speed": 90
+                        },
+                        "moves": [
+                            {
+                                "name": "growl",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "thunder-shock",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "thunder-wave",
+                                "learn_level": 9
+                            },
+                            {
+                                "name": "thunder",
+                                "learn_level": 43
+                            },
+                            {
+                                "name": "agility",
+                                "learn_level": 33
+                            },
+                            {
+                                "name": "quick-attack",
+                                "learn_level": 16
+                            },
+                            {
+                                "name": "swift",
+                                "learn_level": 26
+                            }
+                        ],
+                        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+                        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png"
+                    }
+                },
+                "charmander": {
+                    "name": "charmander",
+                    "stats": {
+                        "id": 4,
+                        "level": 1,
+                        "types": [
+                            "fire"
+                        ],
+                        "stats": {
+                            "hp": 39,
+                            "attack": 52,
+                            "defense": 43,
+                            "sp_attack": 60,
+                            "sp_defense": 50,
+                            "speed": 65
+                        },
+                        "moves": [
+                            {
+                                "name": "scratch",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "leer",
+                                "learn_level": 15
+                            },
+                            {
+                                "name": "growl",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "ember",
+                                "learn_level": 9
+                            },
+                            {
+                                "name": "flamethrower",
+                                "learn_level": 38
+                            },
+                            {
+                                "name": "fire-spin",
+                                "learn_level": 46
+                            },
+                            {
+                                "name": "rage",
+                                "learn_level": 22
+                            },
+                            {
+                                "name": "slash",
+                                "learn_level": 30
+                            }
+                        ],
+                        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+                        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png"
+                    }
+                }
+            }
+        }
+    },
+    "player_info": {
+        "level": "level",
+        "name": "name"
+    },
+    "dialogues": {
+        "pnj1": "firstPokemon",
+        "brock": "firstFigth"
+    },
+    "quest": {
+        "id": "1"
+    },
+    "flags": [
+        "Talk [Chen]"
+    ]
+}

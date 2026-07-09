@@ -1,0 +1,43 @@
+{
+  "pnj1": {
+    "intro": [
+      {"required_flags": []},
+      {"speakers": ["pn1", "Player"]},
+      {"speaker": "pnj1", "text": "Bonjour, comment puis-je vous aider ?"},
+      {"speaker": "Player", "text": "Bonjour, je suis là pour devenir #le meilleur# dresseur de cette ville"},
+      {"speaker": "pnj1", "text": "Je vois, je vois ..."},
+      {"speaker": "Player", "text": "Je voudrais savoir si vous pourriez m'aider dans cette quête ?"},
+      {"speaker": "pnj1", "text": "Bien sûr, mais d'abord comment t'appelles-tu ?"},
+      {"speaker": "Player", "text": "Je m'appelle #Sacha# et vous ?"},
+      {"speaker": "pnj1", "text": "Moi je m'appelle #Chen#, pour t'aider dans cette quête je t'offre un petit cadeau (x30 pokéballs) [Give 30 Pokéball]"},
+      {"speaker": "Player", "text": "Merci, mais où est-ce que je pourrais trouver mes premiers pokemons"},
+      {"speaker": "pnj1", "text": "#A l'est d'ici#, se trouve un portail où tu entrera dans le monde des pokémons"},
+      {"speaker": "Player", "text": "D'accord, merci pour l'info"},
+      {"speaker": "pnj1", "text": "Mais j'ai quelque-chose de mieux à te proposer !"},
+      {"speaker": "Player", "text": "Ah bon ? qu'est ce que c'est ?"},
+      {"speaker": "pnj1", "text": "Je te laisse choisir entre un de ces pokemons ! [Choice pokemon bulbasaur,pikachu,charmander]"},
+      {"speaker": "Player", "text": "Ohh, je vais choisir Pikachu ! Merci pour ce cadeau !"}
+    ],
+    "condition 1": {
+      "condition": "HAVE 1 pokeball",
+      "response": [
+        {"speaker": "pnj1", "text": "Tu peux aller dans la farmland à l'est de la map pour avoir des pokémons"}
+      ]
+    },
+    "firstPokemon": [
+      {"required_flags": []},
+      {"speakers": ["pn1", "Player"]},
+      {"speaker": "pnj1", "text": "Bonjour, comment ça s'est passé depuis la dernière fois ?"},
+      {"speaker": "Player", "text": "Très bien, merci pour les pokeballs !"}
+    ]
+  },
+  "brock": {
+    "firstFigth": [
+      {"required_flags": ["Talk [Chen]"], "response": "Bonjour qui êtes vous ? allez-vous en je dois m'occuper de mes frères bientôt !"},
+      {"speakers": ["brock", "Player"]},
+      {"speaker": "brock", "text": "Bonjour, qui est-tu ?"},
+      {"speaker": "Player", "text": "Je suis là pour le badge roche"},
+      {"speaker": "brock", "text": "Ok, je m'en bat les couilles mais on peut commencer le combat alors ! [Figth onix:2,geodude:2]"}
+    ]
+  }
+}

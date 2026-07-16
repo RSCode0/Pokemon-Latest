@@ -1,6 +1,6 @@
 {
     "inventory": {
-        "pokeball": 147,
+        "pokeball": 297,
         "medicine": 0,
         "pokedex": {
             "pokemons": {
@@ -107,6 +107,251 @@
                         "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
                         "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png"
                     }
+                },
+                "raichu": {
+                    "name": "raichu",
+                    "stats": {
+                        "id": 26,
+                        "level": 1,
+                        "types": [
+                            "electric"
+                        ],
+                        "stats": {
+                            "hp": 60,
+                            "attack": 90,
+                            "defense": 55,
+                            "sp_attack": 90,
+                            "sp_defense": 80,
+                            "speed": 110
+                        },
+                        "moves": [
+                            {
+                                "name": "growl",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "thunder-shock",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "thunder-wave",
+                                "learn_level": 1
+                            }
+                        ],
+                        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+                        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/26.png"
+                    }
+                },
+                "arcanine": {
+                    "name": "arcanine",
+                    "stats": {
+                        "id": 59,
+                        "level": 1,
+                        "types": [
+                            "fire"
+                        ],
+                        "stats": {
+                            "hp": 90,
+                            "attack": 110,
+                            "defense": 80,
+                            "sp_attack": 100,
+                            "sp_defense": 80,
+                            "speed": 95
+                        },
+                        "moves": [
+                            {
+                                "name": "take-down",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "leer",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "roar",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "ember",
+                                "learn_level": 1
+                            }
+                        ],
+                        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+                        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/59.png"
+                    }
+                },
+                "bulbasaur": {
+                    "name": "bulbasaur",
+                    "stats": {
+                        "id": 1,
+                        "level": 1,
+                        "types": [
+                            "grass",
+                            "poison"
+                        ],
+                        "stats": {
+                            "hp": 45,
+                            "attack": 49,
+                            "defense": 49,
+                            "sp_attack": 65,
+                            "sp_defense": 65,
+                            "speed": 45
+                        },
+                        "moves": [
+                            {
+                                "name": "vine-whip",
+                                "learn_level": 13
+                            },
+                            {
+                                "name": "tackle",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "growl",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "leech-seed",
+                                "learn_level": 7
+                            },
+                            {
+                                "name": "growth",
+                                "learn_level": 34
+                            },
+                            {
+                                "name": "razor-leaf",
+                                "learn_level": 27
+                            },
+                            {
+                                "name": "solar-beam",
+                                "learn_level": 48
+                            },
+                            {
+                                "name": "poison-powder",
+                                "learn_level": 20
+                            },
+                            {
+                                "name": "sleep-powder",
+                                "learn_level": 41
+                            }
+                        ],
+                        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+                        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"
+                    }
+                },
+                "charizard": {
+                    "name": "charizard",
+                    "stats": {
+                        "id": 6,
+                        "level": 1,
+                        "types": [
+                            "fire",
+                            "flying"
+                        ],
+                        "stats": {
+                            "hp": 78,
+                            "attack": 84,
+                            "defense": 78,
+                            "sp_attack": 109,
+                            "sp_defense": 85,
+                            "speed": 100
+                        },
+                        "moves": [
+                            {
+                                "name": "scratch",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "leer",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "leer",
+                                "learn_level": 15
+                            },
+                            {
+                                "name": "growl",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "ember",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "ember",
+                                "learn_level": 9
+                            },
+                            {
+                                "name": "flamethrower",
+                                "learn_level": 46
+                            },
+                            {
+                                "name": "fire-spin",
+                                "learn_level": 55
+                            },
+                            {
+                                "name": "rage",
+                                "learn_level": 24
+                            },
+                            {
+                                "name": "slash",
+                                "learn_level": 36
+                            }
+                        ],
+                        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+                        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png"
+                    }
+                },
+                "beedrill": {
+                    "name": "beedrill",
+                    "stats": {
+                        "id": 15,
+                        "level": 1,
+                        "types": [
+                            "bug",
+                            "poison"
+                        ],
+                        "stats": {
+                            "hp": 65,
+                            "attack": 90,
+                            "defense": 40,
+                            "sp_attack": 45,
+                            "sp_defense": 80,
+                            "speed": 75
+                        },
+                        "moves": [
+                            {
+                                "name": "fury-attack",
+                                "learn_level": 1
+                            },
+                            {
+                                "name": "fury-attack",
+                                "learn_level": 12
+                            },
+                            {
+                                "name": "twineedle",
+                                "learn_level": 20
+                            },
+                            {
+                                "name": "pin-missile",
+                                "learn_level": 30
+                            },
+                            {
+                                "name": "agility",
+                                "learn_level": 35
+                            },
+                            {
+                                "name": "rage",
+                                "learn_level": 25
+                            },
+                            {
+                                "name": "focus-energy",
+                                "learn_level": 16
+                            }
+                        ],
+                        "sprite_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+                        "sprite_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/15.png"
+                    }
                 }
             }
         }
@@ -116,13 +361,12 @@
         "name": "name"
     },
     "dialogues": {
-        "pnj1": "firstPokemon",
-        "brock": "firstFigth"
+        "pnj1": "intro",
+        "brock": "firstFigth",
+        "Maman": "road_to_ligue_indogo"
     },
     "quest": {
         "id": "1"
     },
-    "flags": [
-        "Talk [Chen]"
-    ]
+    "flags": []
 }

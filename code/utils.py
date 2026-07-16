@@ -14,3 +14,6 @@ def save_path(filename):
     else:
         base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../venv/code/json"))
     return os.path.join(base_path, filename)
+
+def ease_out_cubic(t):
+    return 1 - pow(1 - t, 3)

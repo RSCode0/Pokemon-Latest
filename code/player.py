@@ -16,7 +16,7 @@ class Player(Entity):
         self.can_move = True
         self.pokemon_can_move = False
         self.player_last_direction = "down"
-        self.quest = Quest()
+        self.quest = Quest(self.keylogs)
         self.info = {
             "level": 0,
             "name": ""

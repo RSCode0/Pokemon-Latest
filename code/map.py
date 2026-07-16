@@ -109,7 +109,7 @@ class Map:
             self.player.can_move = not self.player.can_move
             self.keylogs.remove_key(pygame.K_t)
         elif self.active_quests:
-            self.player.quest.draw_quests()
+            self.player.quest.update()
             self.player.can_move = False
         
         

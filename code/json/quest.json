@@ -1,32 +1,54 @@
 {
-    "1": {
-        "quest": "Talk [pnj1]",
-        "required_flags": [],
-        "completed_flag": "Talk [Chen]",
-        "completed": "True"
-    },
-    "2": {
-        "quest": "Enter [house_1]",
-        "required_flags": [],
-        "completed_flag": "",
-        "completed": "False"
-    },
-    "3": {
-        "quest": "Talk [Maman]",
-        "required_flags": [
-            "Talk [Chen]"
-        ],
-        "completed_flag": "Talk [Maman]",
-        "completed": "False"
-    },
-    "4": {
-        "quest": "Talk [brock]",
-        "required_flags": [
-            "Talk [Maman]"
-        ],
-        "completed_flag": [
-            "1st badge"
-        ],
-        "completed": "False"
-    }
+    "1": [
+        {
+            "quest": "Talk [pnj1]",
+            "required_flags": [],
+            "completed_flag": "Talk [Chen]",
+            "completed": "True"
+        },
+        {
+            "quest": "Enter [house_1]",
+            "required_flags": [],
+            "completed_flag": "",
+            "completed": "True"
+        },
+        {
+            "quest": "Talk [Maman]",
+            "required_flags": [
+                "Talk [Chen]"
+            ],
+            "completed_flag": "Talk [Maman]",
+            "completed": "True"
+        },
+        {
+            "quest": "Talk [brock]",
+            "required_flags": [
+                "Talk [Maman]"
+            ],
+            "completed_flag": [
+                "1st badge"
+            ],
+            "completed": "False"
+        },
+        {
+            "quest": "Enter [hospital_1]",
+            "required_flags": [
+                "Talk [Chen]"
+            ],
+            "completed_flag": [
+                "[Entered hospital 1st time]"
+            ],
+            "completed": "False"
+        },
+        {
+            "quest": "Enter [hospital_1]",
+            "required_flags": [
+                "Talk [Chen]"
+            ],
+            "completed_flag": [
+                "[Entered hospital 1st time]"
+            ],
+            "completed": "False"
+        }
+    ]
 }

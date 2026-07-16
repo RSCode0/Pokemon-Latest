@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.1-8-g449813058" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="21">
+<map version="1.10" tiledversion="1.12.2-2-geb83ddb9" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="26">
  <tileset firstgid="1" source="tileset/request_finalized_by_nicnubill_d6xcly3-375w-2x.tsx"/>
  <tileset firstgid="1025" source="tileset/interior_tileset.tsx"/>
  <layer id="4" name="sol" width="20" height="20">
@@ -116,6 +116,9 @@
   <object id="18" name="player_spawn" x="159.25" y="280.75">
    <point/>
   </object>
+ </objectgroup>
+ <objectgroup id="12" name="npcs">
+  <object id="24" name="pnj Maman" x="224" y="64" width="16" height="16"/>
  </objectgroup>
  <objectgroup id="11" name="tps">
   <object id="20" name="tp map_0" x="144.25" y="307.25" width="31.75" height="12.75"/>

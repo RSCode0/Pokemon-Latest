@@ -9,6 +9,7 @@ class Screen:
     
     def update(self):
         self.dt = self.clock.tick(self.framerate) / 1000
+
         pygame.display.flip()
         pygame.display.update()
 

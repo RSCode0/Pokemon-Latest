@@ -37,7 +37,16 @@
       {"speakers": ["brock", "Player"]},
       {"speaker": "brock", "text": "Bonjour, qui est-tu ?"},
       {"speaker": "Player", "text": "Je suis là pour le badge roche"},
-      {"speaker": "brock", "text": "Ok, je m'en bat les couilles mais on peut commencer le combat alors ! [Figth onix:2,geodude:2]"}
+      {"speaker": "brock", "text": "Ok,on peut commencer le combat alors ! [Figth onix:1,geodude:1]"}
+    ]
+  },
+  "Maman": {
+    "road_to_ligue_indogo": [
+      {"required_flags": ["Talk [Chen]"], "response": "Je suis occupé, va vite aller chercher ton pokemon chez le professeur Chen."},
+      {"speakers": ["Maman", "Player"]},
+      {"speaker": "Player", "text": "Bonjour Maman, je suis venu te dire que je pars en voyage pour rejoindre la lique indigo."},
+      {"speaker": "Maman", "text": "D'accord mon chérie, fais attention à toi sur la route, je te prépare ton sac tout de suite."},
+      {"speaker": "Player", "text": "Merci, pour le sac Maman, et au revoir !"}
     ]
   }
 }

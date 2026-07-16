@@ -204,12 +204,12 @@ class NPC(Entity):
             name_width, name_height = name_surface.get_size()
             box_width = name_width + 40
             box_height = name_height + 20
-            box_x = 40
-            box_y = 780 - 120 - box_height
-            pygame.draw.rect(screen, (41, 41, 38), (box_x, box_y, box_width, box_height))
-            pygame.draw.rect(screen, (255,255,255), (box_x, box_y, box_width, box_height), 4)
+            box_x = 200
+            box_y = 780 - 150 - box_height
+            pygame.draw.rect(screen, (80,80, 80), (box_x, box_y, box_width, box_height), 0, 10)
+            pygame.draw.rect(screen, (245, 206, 78), (box_x, box_y, box_width, box_height), 2, 10)
             screen.blit(name_surface, (box_x + 20, box_y + 10))
-            screen.blit(self.speakers_image[self.current_speaker], (box_x + box_width + 20, 780 - 110 - self.speakers_image[self.current_speaker].get_size()[1]))
+            screen.blit(self.speakers_image[self.current_speaker], (box_x + box_width + 20, 780 - 150 - self.speakers_image[self.current_speaker].get_size()[1]))
             
 
     def draw_text(self, text, screen):
@@ -222,7 +222,7 @@ class NPC(Entity):
                 break
 
             test_line = current_line + word + " "
-            if self.font.size(test_line)[0] < 1280 - 90:
+            if self.font.size(test_line)[0] < 1280 - 510:
                 current_line = test_line
             else:
                 lines.append(current_line)
@@ -233,10 +233,12 @@ class NPC(Entity):
         line_height = self.font.get_linesize()
         red_letter_start = None
 
-        pygame.draw.rect(screen, (41, 41, 38), (40, 780 - 110, 1280 - 80, 100))
-        pygame.draw.rect(screen, (255, 255, 255), (40, 780 - 110, 1280 - 80, 100), 4)
+        pygame.draw.rect(screen, (80, 80, 80), (200, 780 - 150, 1280 - 400, 140), 0, 10)
+        pygame.draw.rect(screen, (245, 206, 78), (200, 780 - 150, 1280 - 400, 140), 2, 10)
+        pygame.draw.rect(screen, (255, 255, 255), (220, 780 - 140, 1280 - 500, 120), 0, 10)
+
         for i, line in enumerate(lines):
-            x_pos = 50
+            x_pos = 230
             for j, letter in enumerate(line):
                 if letter.strip():
                     if letter == "#" and not red_letter_start:
@@ -249,9 +251,9 @@ class NPC(Entity):
 
                     if red_letter_start:
                         if j >= red_letter_start:
-                            screen.blit(self.font.render(letter, False, (255, 40, 40)), (x_pos, 780 - 90 + i * line_height))
+                            screen.blit(self.font.render(letter, True, (255, 40, 40)), (x_pos, 780 - 130 + i * line_height))
                     else:
-                        screen.blit(self.font.render(letter, True, (255, 255, 255)), (x_pos, 780 - 90 + i * line_height))
+                        screen.blit(self.font.render(letter, True, (20, 20, 20)), (x_pos, 780 - 130 + i * line_height))
                 x_pos += self.font.size(letter)[0]
                 
     def next_section(self):

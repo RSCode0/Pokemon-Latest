@@ -19,9 +19,11 @@ class Game:
         self.map = Map(self.screen, "map_0", self.keylogs)
         self.player: Player = Player("/sprite/ash_atchoum_walk.png", 4, 4, self.keylogs)
         Save.load_inventory(self.player)
+        self.player.inventory["pokedex"].add_pokemon(Pokemon("beedrill", 1))
         # self.inventory_bar = InventoryBar(self.screen.get_display(), self.player.inventory)
+        Save.save_inventory(self.player)
         self.map.add_player(self.player)
-    
+
     def run(self):
         while self.running:
             self.player.dt = self.screen.dt

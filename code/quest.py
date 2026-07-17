@@ -5,10 +5,10 @@ import pygame
 class Quest:
     def __init__(self, keylogs):
         self.keylogs = keylogs
-        self.quest = ""
+        self.last_quest_id = ""
         self.quests = []
         self.location = []
-
+        
         self.load_quest()
 
         self.display_surface = pygame.display.get_surface()
@@ -33,7 +33,7 @@ class Quest:
         elif self.keylogs.is_pressed(pygame.K_DOWN):
             self.index += 1
             self.keylogs.remove_key(pygame.K_DOWN)
-        
+
         self.index = self.index % len(self.quests)
     
     def update(self):
@@ -60,7 +60,7 @@ class Quest:
                     with open("venv/code/json/quest.json", "r+", encoding="utf-8") as q_file:
                         data_quest = json.load(q_file)
 
-                    data_quest[quest["quest_index"]]["completed"] = "True"
+                    data_quest[self.last_quest_id][quest["index"]]["completed"] = "True"
 
                     with open("venv/code/json/quest.json", "w+", encoding="utf-8") as q:
                         json.dump(data_quest, q, ensure_ascii=False, indent=4)
@@ -106,7 +106,7 @@ class Quest:
         self.display_surface.blit(quest_title, quest_title_rect)
 
         
-        y_offset = self.main_rect.top + 40 - (0 if self.index < 5 else -(self.index - 6) * (self.main_rect.height - 80 - 4 * 10) / 5)
+        y_offset = self.main_rect.top + 40 - (0 if self.index < 5 else 10 - (self.index - 6) * (self.main_rect.height - 80 - 4 * 10) / 5)
 
         for index, quest in enumerate(self.quests):
             quest_completed = quest["completed"]
@@ -118,6 +118,9 @@ class Quest:
             if self.main_rect.collidepoint(quest_backround.bottomleft)  and self.main_rect.collidepoint(quest_backround.topleft):
                 pygame.draw.rect(self.display_surface, (255, 255, 255) if quest_completed != "True" else (100, 150, 120), quest_backround, border_radius=5)
                 pygame.draw.rect(self.display_surface, (196, 202, 204), quest_backround, 4, 5)
+
+                if self.index == index:
+                    pygame.draw.rect(self.display_surface, (0, 0, 0), quest_backround, 4, 5)
 
                 if quest_completed == "True":
                     icon_rect = self.true_icon.get_rect(midleft=quest_backround.midright + pygame.Vector2(20, 0))
@@ -138,12 +141,12 @@ class Quest:
     def load_quest(self):
         with open("venv/code/json/save.json", "r+") as file:
             save_data = json.load(file)
-            last_quest_id = save_data["quest"]["id"]
+            self.last_quest_id = save_data["quest"]["id"]
 
             self.flags = save_data["flags"]
 
             with open("venv/code/json/quest.json", "r+") as f:
                 quest_data = json.load(f)
 
-                self.quests = [{"quest": quest_data[last_quest_id][index]["quest"], "flags": quest_data[last_quest_id][index]["required_flags"], "completed_flag": quest_data[last_quest_id][index]["completed_flag"], "completed": quest_data[last_quest_id]
-                                [index]["completed"]} for index, quest in enumerate(quest_data[last_quest_id]) if quest["completed_flag"] not in self.flags]
+                self.quests = [{"index": index,"quest": quest_data[self.last_quest_id][index]["quest"], "flags": quest_data[self.last_quest_id][index]["required_flags"], "completed_flag": quest_data[self.last_quest_id][index]["completed_flag"], "completed": quest_data[self.last_quest_id]
+                                [index]["completed"]} for index, quest in enumerate(quest_data[self.last_quest_id])]    

@@ -1,6 +1,6 @@
 {
     "inventory": {
-        "pokeball": 297,
+        "pokeball": 357,
         "medicine": 0,
         "pokedex": {
             "pokemons": {
@@ -361,12 +361,15 @@
         "name": "name"
     },
     "dialogues": {
-        "pnj1": "intro",
+        "pnj1": "condition 1",
         "brock": "firstFigth",
         "Maman": "road_to_ligue_indogo"
     },
     "quest": {
         "id": "1"
     },
-    "flags": []
+    "flags": [
+        "Talk [Chen]",
+        "Talk [Maman]"
+    ]
 }

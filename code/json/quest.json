@@ -39,16 +39,6 @@
                 "[Entered hospital 1st time]"
             ],
             "completed": "False"
-        },
-        {
-            "quest": "Enter [hospital_1]",
-            "required_flags": [
-                "Talk [Chen]"
-            ],
-            "completed_flag": [
-                "[Entered hospital 1st time]"
-            ],
-            "completed": "False"
         }
     ]
 }

@@ -5,6 +5,8 @@ import random
 from pokemon import Pokemon
 from utils import ease_out_cubic
 
+import math
+
 class Fight:
     def __init__(self, type, player_pokedex, ennemi_pokemons, screen: pygame.Surface, keys):
         self.screen          = screen
@@ -48,9 +50,10 @@ class Fight:
         self.LOG_DURATION = 1800
 
         self.animation_duration = 800
-        self.animation_pos = []
-        self.animation_start_pos = []
-        self.animation_end_pos = []
+
+        self.typewritter_speed = 20
+        self.last_typwritter_time = 20
+        self.current_time = 0
 
         self.in_animation = False
         self.frame_index = 0
@@ -124,7 +127,7 @@ class Fight:
             img = pygame.image.load(
                 f"venv/assets/pokemons/pokemons_gen1_backs/{pname}_backs.png"
             ).convert_alpha()
-            self.player_pokemons_images[slot] = pygame.transform.scale2x(img)
+            self.player_pokemons_images[slot] = pygame.transform.scale_by(img, 2.5)
 
     def _calc_damage(self, atk_stats, def_stats, move):
         power   = int(move.get("power") or 0)
@@ -268,16 +271,16 @@ class Fight:
                 self.player_actions.append((self.acting_pokemon, self.pending_move, name))
                 self.pending_move   = None
                 self.acting_pokemon = None
-                next_actor = self._next_actor()
-                if next_actor:
-                    self.state = "choose_move"
-                else:
-                    self._execute_player_actions()
-                return
+                self._execute_player_actions()
     
     def draw_starting_animation(self):
         dt_ms = pygame.time.get_ticks()
         elapsed = -(self.started_animation_ms - dt_ms)
+
+        p_iw, p_ih = self.player_pokemons_images[self.player_selected_pokemon].get_size()
+        p_pos = [120 + (p_iw + 20), 780 - 250 - p_ih]
+        e_iw, e_ih = self.ennemi_pokemons_images[self.ennemi_selected_pokemon["name"]].get_size()
+        e_pos = [1280 - 200 - (e_iw + 20) - e_iw, 80]
 
         if self.animation_duration > elapsed:
             t = elapsed / self.animation_duration
@@ -285,38 +288,51 @@ class Fight:
 
             offset = -(500 * (1 - t_eased))
 
-            self._draw_platform(160 + self.player_pokemons_images[self.player_selected_pokemon].get_size()[0] // 2 - offset , 780 - 200)
-            self._draw_platform(1280 - 200 - self.ennemi_pokemons_images[self.ennemi_selected_pokemon["name"]].get_size()[0] // 2 + offset, 200)
+            self._draw_platform(p_pos[0] + p_iw // 2 - offset, p_pos[1] + p_ih, p_iw + 40)
+            self._draw_platform(e_pos[0] + e_iw // 2 + offset, e_pos[1] + e_ih, e_iw + 40)
         else:
-            self._draw_platform(160 + self.player_pokemons_images[self.player_selected_pokemon].get_size()[0] // 2, 780 - 200)
-            self._draw_platform(1280 - 200 - self.ennemi_pokemons_images[self.ennemi_selected_pokemon["name"]].get_size()[0] // 2, 200)
+            self._draw_platform(p_pos[0] + p_iw // 2, p_pos[1] + p_ih, p_iw + 40)
+            self._draw_platform(e_pos[0] + e_iw // 2, e_pos[1] + e_ih, e_iw + 40)
             if not self.in_animation:
-                self.animation_start_pos = [140, 140]
-                self.animation_end_pos = [160 + self.player_pokemons_images[self.player_selected_pokemon].get_size()[0] // 2, 780 - 200]
                 self.in_animation = True
                 self.pokemon_entering_animation_ms = pygame.time.get_ticks()
-            self.pokemon_entering_animation(self.player_selected_pokemon)
-            self.pokemon_entering_animation(self.ennemi_selected_pokemon["name"])
+            self.pokemon_entering_animation("player", [20, 20], [p_pos[0] + p_iw // 2, p_pos[1] + p_ih])
+            self.pokemon_entering_animation("ennemi", [1280 + 200, - 200], [e_pos[0] + e_iw // 2, e_pos[1] + e_ih])
 
-    def pokemon_entering_animation(self, name):
+    def pokemon_entering_animation(self, name, start, end):
         dt_ms = pygame.time.get_ticks()
         elapsed = -(self.pokemon_entering_animation_ms - dt_ms)
 
         t = elapsed / self.animation_duration
         t = 1 - (1 - t) ** 3
 
-        x = self.animation_start_pos[0] + (self.animation_end_pos[0] - self.animation_start_pos[0]) * t
-        max_height = 80
-        y = (self.animation_start_pos[1] + (self.animation_end_pos[1] - self.animation_start_pos[1]) * t)
+        x = start[0] + (end[0] - start[0]) * t
+        y = (start[1] + (end[1] - start[1]) * t)
 
-        self.animation_pos = [x, y]
+        pos = [x, y]
 
-        self.frame_index += 4 * 0.16
-        self.frame_index = int(self.frame_index) % (len(self.pokeball_escape_images) - 2)
-        
-        rect = self.pokeball_escape_images[self.frame_index].get_rect(center=self.animation_pos)
+        self.frame_index += 1
+        self.frame_index = int(self.frame_index) % (len(self.pokeball_escape_images) - 1)
+
+        fade_t = (elapsed - 800) / self.animation_duration
+        fade_t = 1 - (1 - fade_t) ** 3
+        alpha = 255 * fade_t
+
+        rect = self.pokeball_escape_images[self.frame_index].get_rect(center=pos)
         if elapsed < self.animation_duration:
             self.screen.blit(self.pokeball_escape_images[self.frame_index], rect)
+        else:
+            if elapsed - 100 < self.animation_duration:
+                self.screen.blit(self.pokeball_escape_images[4], rect)
+            else:
+                if elapsed - 800 < self.animation_duration:
+                    pokemon_surface = self.player_pokemons_images[self.player_selected_pokemon] if name == "player" else self.ennemi_pokemons_images[self.ennemi_selected_pokemon["name"]]
+                    rect = pokemon_surface.get_rect(midbottom=end)
+                    pokemon_surface.set_alpha(0 if alpha < 0 else alpha)
+                    self.screen.blit(pokemon_surface, rect)
+                else:
+                    self.draw_pokemons()
+                    self.state = "choose_move"
 
     def draw_fight(self):
         dt_ms = pygame.time.get_ticks()
@@ -338,6 +354,8 @@ class Fight:
             if not hasattr(self, "started_animation_ms"):
                 self.started_animation_ms = pygame.time.get_ticks()
             self.draw_starting_animation()
+        else:
+            self.draw_pokemons()
 
         self._draw_ui_panel()
 
@@ -403,13 +421,10 @@ class Fight:
                 rect.center = (cx, bottom_y + h // 2 - 10)
                 pygame.draw.ellipse(self.screen, color, rect, 3)
 
-        self._draw_hp_bar(pos[0], pos[1] - 30, iw,self.player_pokemons_stats[slot]["stats"]["hp"],self.player_pokemons_base_hp[slot])
         name = self.player_pokemons_stats[slot].get("name", slot)
         lvl  = self.player_pokemons_stats[slot].get("level", "?")
-        self.screen.blit(
-            self.font_small.render(f"{name} Nv.{lvl}", True, (30, 30, 30)),
-            (pos[0], pos[1] - 48)
-        )
+
+        self._draw_hp_bar(pos[0] + iw + 50, pos[1] + ih // 2, iw ,self.player_pokemons_stats[slot]["stats"]["hp"],self.player_pokemons_base_hp[slot], lvl, name)
 
         x_base = SW - 200
         y_base = 80
@@ -435,15 +450,11 @@ class Fight:
                 rect = pygame.Rect(0, 0, w, h)
                 rect.center = (cx, bottom_y + h // 2 - 10)
                 pygame.draw.ellipse(self.screen, color, rect, 3)
-        
-        self._draw_hp_bar(pos[0], pos[1] - 30, iw,self.ennemi_pokemons_stats[name]["stats"]["hp"],self.ennemi_pokemons_base_hp[name])
-        lvl = self.ennemi_pokemons_stats[name].get("level", "?")
-        self.screen.blit(
-            self.font_small.render(f"{name} Nv.{lvl}", True, (30, 30, 30)),
-            (pos[0], pos[1] - 48)
-        )
 
-    def _draw_hp_bar(self, x, y, width, hp, base_hp):
+        lvl = self.ennemi_pokemons_stats[name].get("level", "?")
+        self._draw_hp_bar(pos[0] - iw - 100, pos[1] + ih // 2, iw,self.ennemi_pokemons_stats[name]["stats"]["hp"],self.ennemi_pokemons_base_hp[name], lvl, name)
+
+    def _draw_hp_bar(self, x, y, width, hp, base_hp, lvl, name):
         hp      = max(0, int(hp))
         base_hp = max(1, int(base_hp))
         ratio   = hp / base_hp
@@ -459,9 +470,12 @@ class Fight:
 
     def _draw_ui_panel(self):
         SW, SH = self.screen.get_size()
-        panel  = pygame.Rect(0, SH - 110, SW, 110)
-        pygame.draw.rect(self.screen, (20, 20, 20), panel)
-        pygame.draw.rect(self.screen, (58, 158, 181), panel, 3)
+
+        pygame.draw.rect(self.screen, (80, 80, 80), (0, 780 - 200, SW, 200))
+        if not self.state == "choose_move":
+            pygame.draw.rect(self.screen, (80, 80, 80), (200, 780 - 150, 1280 - 400, 140), 0, 10)
+            pygame.draw.rect(self.screen, (245, 206, 78), (200, 780 - 150, 1280 - 400, 140), 2, 10)
+            pygame.draw.rect(self.screen, (255, 255, 255), (220, 780 - 140, 1280 - 500, 120), 0, 10)
 
         if self.state == "choose_move":
             if not self.acting_pokemon:
@@ -472,7 +486,7 @@ class Fight:
                 txt = f"Choisissez une attaque pour {pname}"
             else:
                 txt = "Cliquez sur un de vos Pokémons pour choisir son attaque"
-            surf = self.font.render(txt, True, (200, 200, 200))
+            surf = self.font.render(txt, True, (40, 40, 40))
             self.screen.blit(surf, surf.get_rect(center=(SW // 2, SH - 80)))
 
         elif self.state == "choose_target":
@@ -487,11 +501,28 @@ class Fight:
 
     def _get_move_rects(self, moves):
         SW, SH = self.screen.get_size()
-        btn_w, btn_h, gap = 220, 48, 12
-        total_w = len(moves) * btn_w + (len(moves) - 1) * gap
-        x0 = SW // 2 - total_w // 2
-        y0 = SH - 210
-        return [pygame.Rect(x0 + i * (btn_w + gap), y0, btn_w, btn_h) for i in range(len(moves))]
+        btn_w, btn_h = (SW // 2) - 200, 200 // 2 - 20
+        x0 = 200 - 20
+        y0 = SH - (200 - 10)
+
+        lines = []
+        current_line = []
+        index = 0
+        for move in moves:
+            index += 1
+            if index <= 2:
+                current_line.append(move)
+            else:
+                lines.append(move)
+                current_line = []
+            lines.append(current_line)
+        
+        rects = []
+        for i, line in enumerate(lines):
+            for j, move in enumerate(line):
+                rects.append(pygame.rect.Rect((x0 + j * (btn_w + 20), y0 + i * (btn_h + 20), btn_w, btn_h)))
+        return rects
+
 
     def _draw_move_menu(self):
         moves = self.player_pokemons_moves.get(self.acting_pokemon, [])
@@ -500,21 +531,22 @@ class Fight:
         rects = self._get_move_rects(moves)
         mouse = pygame.mouse.get_pos()
 
-        overlay = pygame.Surface(self.screen.get_size(), pygame.SRCALPHA)
-        overlay.fill((0, 0, 0, 80))
-        self.screen.blit(overlay, (0, 0))
-
         for move, rect in zip(moves, rects):
             hovered = rect.collidepoint(mouse)
-            color   = (80, 200, 240) if hovered else (40, 100, 140)
-            pygame.draw.rect(self.screen, color, rect, border_radius=10)
-            pygame.draw.rect(self.screen, (200, 240, 255), rect, 2, border_radius=10)
+            color   = (120, 120, 120, 255) if hovered else (200, 200, 200, 255)
+            surface = pygame.Surface(self.screen.size, pygame.SRCALPHA)
+            
+            pygame.draw.rect(surface, color, rect, border_radius=5)
+            pygame.draw.rect(surface, (170, 170, 170, 255), (rect.x, rect.y, rect.width, rect.height // 2), 0, 5)
+            pygame.draw.rect(surface, (20, 20, 20), rect, 2, border_radius=5)
+
+            self.screen.blit(surface, (0, 0))
             self.screen.blit(
-                self.font.render(move.get("name", "???"), True, (255, 255, 255)),
-                self.font.render(move.get("name", "???"), True, (255, 255, 255)).get_rect(center=rect.center).move(0, -8)
+                self.font.render(move.get("name", "???"), True, (40, 40, 40)),
+                self.font.render(move.get("name", "???"), True, (40, 40, 40)).get_rect(center=rect.center).move(0, -8)
             )
             power = move.get("power") or "inconnu"
-            info  = self.font_small.render(f"Puissance : {power}", True, (180, 220, 240))
+            info  = self.font_small.render(f"Puissance : {power}", True, (80, 80, 80))
             self.screen.blit(info, info.get_rect(center=rect.center).move(0, 12))
 
     def _draw_target_hint(self):

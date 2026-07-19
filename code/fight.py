@@ -53,6 +53,7 @@ class Fight:
 
         self.typewritter_speed = 20
         self.last_typwritter_time = 20
+        self.typewritter_index = 0
         self.current_time = 0
 
         self.in_animation = False
@@ -230,7 +231,7 @@ class Fight:
             return
 
         if self.state == "choose_move":
-            self._handle_choose_move(mouse_pos, mouse_clicked)
+            self._draw_move_menu()
 
         elif self.state == "choose_target":
             self._handle_choose_target(mouse_pos, mouse_clicked)
@@ -362,8 +363,6 @@ class Fight:
         if self.state in ("choose_move", "choose_target"):
             if self.acting_pokemon:
                 self._draw_move_menu()
-        if self.state == "choose_target":
-            self._draw_target_hint()
 
         if self.log_timer > 0:
             self._draw_log()
@@ -472,32 +471,33 @@ class Fight:
         SW, SH = self.screen.get_size()
 
         pygame.draw.rect(self.screen, (80, 80, 80), (0, 780 - 200, SW, 200))
-        if not self.state == "choose_move":
+        if not self.acting_pokemon:
             pygame.draw.rect(self.screen, (80, 80, 80), (200, 780 - 150, 1280 - 400, 140), 0, 10)
             pygame.draw.rect(self.screen, (245, 206, 78), (200, 780 - 150, 1280 - 400, 140), 2, 10)
             pygame.draw.rect(self.screen, (255, 255, 255), (220, 780 - 140, 1280 - 500, 120), 0, 10)
+
+        x_pos = 200 + 20
+        y_pos = 780 - 150 - 10
+
+        txt = ""
+        color = (255, 255, 255)
 
         if self.state == "choose_move":
             if not self.acting_pokemon:
                 self.handle_input()
                 txt = "Choisissez un pokemon"
-            elif self.acting_pokemon:
-                pname = self.player_pokemons_stats[self.acting_pokemon].get("name", self.acting_pokemon)
-                txt = f"Choisissez une attaque pour {pname}"
-            else:
-                txt = "Cliquez sur un de vos Pokémons pour choisir son attaque"
-            surf = self.font.render(txt, True, (40, 40, 40))
-            self.screen.blit(surf, surf.get_rect(center=(SW // 2, SH - 80)))
-
-        elif self.state == "choose_target":
-            pname = self.player_pokemons_stats[self.acting_pokemon].get("name", self.acting_pokemon)
-            move_name = self.pending_move.get("name", "???") if self.pending_move else "???"
-            surf = self.font.render(f"{pname} utilise {move_name} : cliquez sur un ennemi", True, (255, 200, 80))
-            self.screen.blit(surf, surf.get_rect(center=(SW // 2, SH - 80)))
+                self.typewritter_index = 0
 
         elif self.state == "ennemi_attack":
-            surf = self.font.render("L'ennemi prépare son attaque…", True, (220, 140, 140))
-            self.screen.blit(surf, surf.get_rect(center=(SW // 2, SH - 80)))
+            txt = "L'ennemi prépare son attaque…"
+            color = (220, 140, 140)
+
+        self.current_time = pygame.time.get_ticks()
+        if self.current_time - self.last_typwritter_time > self.typewritter_speed and self.typewritter_index < len(txt):
+                self.typewritter_index += 1
+                self.last_typwritter_time = self.current_time
+
+        print(txt)
 
     def _get_move_rects(self, moves):
         SW, SH = self.screen.get_size()
@@ -523,7 +523,6 @@ class Fight:
                 rects.append(pygame.rect.Rect((x0 + j * (btn_w + 20), y0 + i * (btn_h + 20), btn_w, btn_h)))
         return rects
 
-
     def _draw_move_menu(self):
         moves = self.player_pokemons_moves.get(self.acting_pokemon, [])
         if not moves:
@@ -548,11 +547,6 @@ class Fight:
             power = move.get("power") or "inconnu"
             info  = self.font_small.render(f"Puissance : {power}", True, (80, 80, 80))
             self.screen.blit(info, info.get_rect(center=rect.center).move(0, 12))
-
-    def _draw_target_hint(self):
-        SW, SH = self.screen.get_size()
-        surf = self.font_small.render("Cliquez sur un ennemi pour attaquer", True, (255, 160, 60))
-        self.screen.blit(surf, surf.get_rect(center=(SW // 2, SH - 230)))
 
     def _draw_log(self):
         SW, SH = self.screen.get_size()

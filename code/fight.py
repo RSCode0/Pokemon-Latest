@@ -389,7 +389,7 @@ class Fight:
         name = self.player_pokemons_stats[slot].get("name", slot)
         lvl  = self.player_pokemons_stats[slot].get("level", "?")
 
-        self._draw_hp_bar(pos[0] + iw + 50, pos[1] + ih // 2, iw ,self.player_pokemons_stats[slot]["stats"]["hp"],self.player_pokemons_base_hp[slot], lvl, name)
+        self._draw_hp_bar(pos[0] + iw + 200, pos[1] + ih // 2,self.player_pokemons_stats[slot]["stats"]["hp"],self.player_pokemons_base_hp[slot], lvl, name)
 
         x_base = SW - 200
         y_base = 80
@@ -407,21 +407,34 @@ class Fight:
             self._ennemi_sprite_rects[name] = rect
 
         lvl = self.ennemi_pokemons_stats[name].get("level", "?")
-        self._draw_hp_bar(pos[0] - iw - 100, pos[1] + ih // 2, iw,self.ennemi_pokemons_stats[name]["stats"]["hp"],self.ennemi_pokemons_base_hp[name], lvl, name)
+        self._draw_hp_bar(pos[0] - iw - 200, pos[1], self.ennemi_pokemons_stats[name]["stats"]["hp"],self.ennemi_pokemons_base_hp[name], lvl, name)
 
-    def _draw_hp_bar(self, x, y, width, hp, base_hp, lvl, name):
+    def _draw_hp_bar(self, x, y, hp, base_hp, lvl, name):
         hp      = max(0, int(hp))
         base_hp = max(1, int(base_hp))
         ratio   = hp / base_hp
+        width = 200
         bar_w   = int(width * ratio)
-        pygame.draw.rect(self.screen, (60, 60, 60), (x, y, width, 12), border_radius=4)
-        color = (60, 200, 60) if ratio > 0.5 else (220, 180, 0) if ratio > 0.25 else (200, 40, 40)
-        if bar_w > 0:
-            pygame.draw.rect(self.screen, color, (x, y, bar_w, 12), border_radius=4)
-        self.screen.blit(
-            self.font_small.render(f"{hp}/{base_hp}", True, (255, 255, 255)),
-            (x + width + 6, y - 2)
-        )
+        
+        
+        surface = pygame.Surface(self.screen.size, pygame.SRCALPHA)
+        pygame.draw.polygon(surface, (200, 200, 200, 255), [[x, y], [x + width + 20, y], [x + width + 20 - 10, y + 75], [x - 10, y + 75]])
+        pygame.draw.polygon(surface, (30, 30, 30, 255), [[x, y], [x + width + 20, y], [x + width + 20 - 10, y + 75], [x - 10, y + 75]], 4)
+
+        mid_1 = [((x + width + 20) + (x + width + 20 - 10)) / 2, (y + (y + 75)) / 2]
+        mid_2 = [(x + (x - 10)) / 2, (y + (y + 75)) / 2]
+
+        name_center = [(x + (mid_1[0])) / 2, (y + (mid_1[1])) / 2]
+        name_surface = self.font.render(name, True, (255, 255, 255))
+
+        bar_center = [(mid_2[0] + (x + width + 20 - 10)) / 2, (mid_2[1] + ( y + 75)) / 2]
+
+        bar_rect = pygame.rect.Rect(0, 0, width, 12).move_to(center=bar_center)
+
+        pygame.draw.polygon(surface, (40, 40, 40), [[x, y], [x + width + 20, y], mid_1, mid_2])
+        pygame.draw.rect(surface, (60, 60, 60), bar_rect, 0, 12)
+        surface.blit(name_surface, name_surface.get_rect(center=name_center))
+        self.screen.blit(surface, (0, 0))
 
     def _draw_ui_panel(self):
         SW, SH = self.screen.get_size()

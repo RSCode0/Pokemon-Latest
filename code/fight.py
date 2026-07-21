@@ -42,12 +42,11 @@ class Fight:
 
         self.acting_pokemon  = None
         self.pending_move    = None
-        self.player_actions  = []
-        self.actions_done    = 0
 
         self.log_message  = ""
         self.log_timer    = 0
         self.LOG_DURATION = 1800
+        self.is_log = False
 
         self.animation_duration = 800
 
@@ -148,32 +147,16 @@ class Fight:
         return [n for n, st in self.ennemi_pokemons_stats.items()
                 if int(st["stats"]["hp"]) > 0]
 
-    def _next_actor(self):
-        acted = {a for a, _, _ in self.player_actions}
-        for slot in self._alive_players():
-            if slot not in acted:
-                return slot
-        return None
-
     def _execute_player_actions(self):
-        for attacker, move, target in self.player_actions:
-            if int(self.player_pokemons_stats[attacker]["stats"]["hp"]) <= 0:
-                continue
-            if int(self.ennemi_pokemons_stats[target]["stats"]["hp"]) <= 0:
-                alive = self._alive_ennemis()
-                if not alive:
-                    break
-                target = alive[0]
-            atk_stats = self.player_pokemons_stats[attacker]
-            def_stats = self.ennemi_pokemons_stats[target]
-            dmg = self._calc_damage(atk_stats, def_stats, move)
-            def_stats["stats"]["hp"] = max(0, int(def_stats["stats"]["hp"]) - dmg)
-            pname = atk_stats.get("name", attacker)
-            self._set_log(f"{pname} utilise {move['name']} sur {target} ! ({dmg} dégâts)")
-            if int(def_stats["stats"]["hp"]) <= 0:
-                self._set_log(f"{target} est K.O. !")
+        atk_stats = self.player_pokemons_stats[self.player_selected_pokemon]
+        def_stats = self.ennemi_pokemons_stats[self.ennemi_selected_pokemon["name"]]
+        dmg = self._calc_damage(atk_stats, def_stats, self.pending_move)
+        def_stats["stats"]["hp"] = max(0, int(def_stats["stats"]["hp"]) - dmg)
+        pname = atk_stats.get("name", self.player_selected_pokemon)
+        self._set_log(f"{pname} utilise {self.pending_move['name']} sur {self.ennemi_selected_pokemon["name"]} ! ({dmg} dégâts)")
+        if int(def_stats["stats"]["hp"]) <= 0:
+            self._set_log(f"{self.ennemi_selected_pokemon["name"]} est K.O. !")
 
-        self.player_actions = []
         if not self._alive_ennemis():
             self.state  = "over"
             self.winner = "player"
@@ -191,7 +174,7 @@ class Fight:
             if not moves:
                 continue
             move   = random.choice(moves)
-            target = random.choice(alive_players)
+            target = self.player_selected_pokemon
             atk    = self.ennemi_pokemons_stats[e_name]
             defn   = self.player_pokemons_stats[target]
             dmg    = self._calc_damage(atk, defn, move)
@@ -208,12 +191,14 @@ class Fight:
             self.state  = "over"
             self.winner = "ennemi"
         else:
-            self.handle_input()
             self.state = "choose_move"
 
     def _set_log(self, msg):
+        self.is_log = True
         self.log_message = msg
         self.log_timer   = self.LOG_DURATION
+        self.typewritter_speed = (self.LOG_DURATION - 200) / len(msg)
+        self.typewritter_index = 0
 
     def handle_input(self):
         mouse_pos     = pygame.mouse.get_pos()
@@ -224,55 +209,39 @@ class Fight:
                 self.keys.remove_key(pygame.K_SPACE)
                 self.is_over = True
             return
+        
+        if self.keys.is_pressed(pygame.K_SPACE):
+            self.keys.remove_key(pygame.K_SPACE)
+            if self.log_timer > 0:
+                if self.typewritter_index == len(self.log_message):
+                    self.log_timer = 0
+                    self.is_log = False
+                else:
+                    self.typewritter_index = len(self.log_message)
+            elif self.log_timer < 0:
+                self.log_timer = 0
+                self.is_log = False
+                self.typewritter_index = 0
 
         if self.state == "ennemi_attack":
-            if self.log_timer <= 0:
+            if not self.is_log:
                 self._ennemi_attack_turn()
             return
 
         if self.state == "choose_move":
-            self._draw_move_menu()
-
-        elif self.state == "choose_target":
-            self._handle_choose_target(mouse_pos, mouse_clicked)
-
-        if self.keys and self.keys.is_pressed(pygame.K_ESCAPE):
-            self.keys.remove_key(pygame.K_ESCAPE)
-            self.pending_move   = None
-            self.acting_pokemon = self._next_actor()
-            self.state = "choose_move"
-
-    def _handle_choose_move(self, mouse_pos, mouse_clicked):
-        if mouse_clicked[0]:
-            for slot, rect in self._player_sprite_rects.items():
-                if rect.collidepoint(mouse_pos) and int(self.player_pokemons_stats[slot]["stats"]["hp"]) > 0:
-                    acted = {a for a, _, _ in self.player_actions}
-                    if slot not in acted:
-                        self.acting_pokemon = slot
-                    break
-
-        if self.acting_pokemon:
-            self._handle_move_menu_click(mouse_pos, mouse_clicked)
+            if not self.is_log:
+                self._draw_move_menu()
+                self._handle_move_menu_click(mouse_pos, mouse_clicked)
 
     def _handle_move_menu_click(self, mouse_pos, mouse_clicked):
-        moves = self.player_pokemons_moves.get(self.acting_pokemon, [])
+        moves = self.player_pokemons_moves.get(self.player_selected_pokemon, [])
         rects = self._get_move_rects(moves)
         for i, rect in enumerate(rects):
             if rect.collidepoint(mouse_pos):
                 if mouse_clicked[0] and i < len(moves):
                     self.pending_move = moves[i]
-                    self.state = "choose_target"
+                    self._execute_player_actions()
                     return
-
-    def _handle_choose_target(self, mouse_pos, mouse_clicked):
-        if not mouse_clicked[0]:
-            return
-        for name, rect in self._ennemi_sprite_rects.items():
-            if rect.collidepoint(mouse_pos) and int(self.ennemi_pokemons_stats[name]["stats"]["hp"]) > 0:
-                self.player_actions.append((self.acting_pokemon, self.pending_move, name))
-                self.pending_move   = None
-                self.acting_pokemon = None
-                self._execute_player_actions()
     
     def draw_starting_animation(self):
         dt_ms = pygame.time.get_ticks()
@@ -360,12 +329,9 @@ class Fight:
 
         self._draw_ui_panel()
 
-        if self.state in ("choose_move", "choose_target"):
-            if self.acting_pokemon:
-                self._draw_move_menu()
+        if self.state in ("choose_move"):
+            self.handle_input()
 
-        if self.log_timer > 0:
-            self._draw_log()
         if self.state == "over":
             self._draw_over_screen()
 
@@ -440,16 +406,6 @@ class Fight:
             rect = pygame.Rect(*pos, iw, ih)
             self._ennemi_sprite_rects[name] = rect
 
-        if self.state == "choose_target":
-            mouse = pygame.mouse.get_pos()
-            if rect.collidepoint(mouse):
-                w, h = iw + 40, 28
-                bottom_y = pos[1] + ih
-                color = (200, 100, 100)
-                rect = pygame.Rect(0, 0, w, h)
-                rect.center = (cx, bottom_y + h // 2 - 10)
-                pygame.draw.ellipse(self.screen, color, rect, 3)
-
         lvl = self.ennemi_pokemons_stats[name].get("level", "?")
         self._draw_hp_bar(pos[0] - iw - 100, pos[1] + ih // 2, iw,self.ennemi_pokemons_stats[name]["stats"]["hp"],self.ennemi_pokemons_base_hp[name], lvl, name)
 
@@ -470,34 +426,27 @@ class Fight:
     def _draw_ui_panel(self):
         SW, SH = self.screen.get_size()
 
-        pygame.draw.rect(self.screen, (80, 80, 80), (0, 780 - 200, SW, 200))
-        if not self.acting_pokemon:
-            pygame.draw.rect(self.screen, (80, 80, 80), (200, 780 - 150, 1280 - 400, 140), 0, 10)
-            pygame.draw.rect(self.screen, (245, 206, 78), (200, 780 - 150, 1280 - 400, 140), 2, 10)
-            pygame.draw.rect(self.screen, (255, 255, 255), (220, 780 - 140, 1280 - 500, 120), 0, 10)
+        main_surf = pygame.Surface((SW, 200), pygame.SRCALPHA)
+        main_surf_rect = main_surf.get_rect()
+        main_surf.fill((80, 80, 80, 255))
 
-        x_pos = 200 + 20
-        y_pos = 780 - 150 - 10
-
-        txt = ""
-        color = (255, 255, 255)
-
-        if self.state == "choose_move":
-            if not self.acting_pokemon:
-                self.handle_input()
-                txt = "Choisissez un pokemon"
-                self.typewritter_index = 0
-
-        elif self.state == "ennemi_attack":
-            txt = "L'ennemi prépare son attaque…"
-            color = (220, 140, 140)
-
-        self.current_time = pygame.time.get_ticks()
-        if self.current_time - self.last_typwritter_time > self.typewritter_speed and self.typewritter_index < len(txt):
+        x_pos = 240
+        current_time = pygame.time.get_ticks()
+        if self.is_log:
+            if current_time - self.last_typwritter_time  > self.typewritter_speed:
                 self.typewritter_index += 1
-                self.last_typwritter_time = self.current_time
+                self.last_typwritter_time = current_time
 
-        print(txt)
+        if self.is_log or self.state == "starting_animation":
+            pygame.draw.rect(main_surf, (80, 80, 80), (200, 30, 1280 - 400, 140), 0, 10)
+            pygame.draw.rect(main_surf, (245, 206, 78), (200, 30, 1280 - 400, 140), 2, 10)
+            pygame.draw.rect(main_surf, (255, 255, 255), (220, 40, 1280 - 500, 120), 0, 10)
+
+        for letter in self.log_message[:self.typewritter_index]:
+            main_surf.blit(self.font.render(letter, True, (0, 0, 0)), (x_pos, 60))
+            x_pos += self.font.size(letter)[0]
+
+        self.screen.blit(main_surf, (0, 780 - 200))
 
     def _get_move_rects(self, moves):
         SW, SH = self.screen.get_size()
@@ -524,7 +473,7 @@ class Fight:
         return rects
 
     def _draw_move_menu(self):
-        moves = self.player_pokemons_moves.get(self.acting_pokemon, [])
+        moves = self.player_pokemons_moves.get(self.player_selected_pokemon, [])
         if not moves:
             return
         rects = self._get_move_rects(moves)
@@ -547,34 +496,6 @@ class Fight:
             power = move.get("power") or "inconnu"
             info  = self.font_small.render(f"Puissance : {power}", True, (80, 80, 80))
             self.screen.blit(info, info.get_rect(center=rect.center).move(0, 12))
-
-    def _draw_log(self):
-        SW, SH = self.screen.get_size()
-        ratio   = self.log_timer / self.LOG_DURATION
-        if ratio > (1 - 200 / self.LOG_DURATION):
-            alpha = int(255 * (1 - ratio) / (200 / self.LOG_DURATION))
-        elif ratio < (400 / self.LOG_DURATION):
-            alpha = int(255 * ratio / (400 / self.LOG_DURATION))
-        else:
-            alpha = 255
-        alpha = max(0, min(255, alpha))
-
-        font_log   = pygame.font.Font("venv/assets/fonts/Abel-Regular.ttf", 26)
-        px, py     = 28, 14
-        text_surf  = font_log.render(self.log_message, True, (255, 255, 255))
-        tw, th     = text_surf.get_size()
-        bg_w, bg_h = tw + px * 2, th + py * 2
-        bx = SW // 2 - bg_w // 2
-        by = SH - 160
-
-        bg = pygame.Surface((bg_w, bg_h), pygame.SRCALPHA)
-        pygame.draw.rect(bg, (10, 10, 30), (0, 0, bg_w, bg_h), border_radius=12)
-        border = (255, 60, 60) if "K.O" in self.log_message else (80, 200, 255) if "utilise" in self.log_message else (255, 200, 0)
-        pygame.draw.rect(bg, (*border, 255), (0, 0, bg_w, bg_h), 3, border_radius=12)
-        bg.set_alpha(alpha)
-        self.screen.blit(bg, (bx, by))
-        text_surf.set_alpha(alpha)
-        self.screen.blit(text_surf, (bx + px, by + py))
 
     def _draw_over_screen(self):
         SW, SH = self.screen.get_size()

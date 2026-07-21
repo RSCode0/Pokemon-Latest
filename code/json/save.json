@@ -370,6 +370,9 @@
     },
     "flags": [
         "Talk [Chen]",
-        "Talk [Maman]"
+        "Talk [Maman]",
+        [
+            "1st badge"
+        ]
     ]
 }

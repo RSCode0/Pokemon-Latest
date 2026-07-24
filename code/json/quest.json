@@ -2,43 +2,41 @@
     "1": [
         {
             "quest": "Talk [pnj1]",
+            "quest_text": "Parlez au professeur Chen pour récupérer votre premier pokemon",
             "required_flags": [],
             "completed_flag": "Talk [Chen]",
+            "reward": "",
             "completed": "True"
         },
         {
             "quest": "Enter [house_1]",
+            "quest_text": "Entrez dans votre maison pour la découvrir",
             "required_flags": [],
             "completed_flag": "",
+            "reward": "",
             "completed": "True"
         },
         {
             "quest": "Talk [Maman]",
+            "quest_text": "Parlez à votre mère pour lui prévenir votre départ pour la ligue indigo",
             "required_flags": [
                 "Talk [Chen]"
             ],
             "completed_flag": "Talk [Maman]",
+            "reward": "",
             "completed": "True"
         },
         {
             "quest": "Talk [brock]",
+            "quest_text": "Combattez votre premier rivale devant la petit maison",
             "required_flags": [
                 "Talk [Maman]"
             ],
             "completed_flag": [
                 "1st badge"
             ],
+            "reward": "",
             "completed": "True"
-        },
-        {
-            "quest": "Enter [hospital_1]",
-            "required_flags": [
-                "Talk [Chen]"
-            ],
-            "completed_flag": [
-                "[Entered hospital 1st time]"
-            ],
-            "completed": "False"
         }
     ]
 }

@@ -8,7 +8,7 @@ class Quest:
         self.last_quest_id = ""
         self.quests = []
         self.location = []
-        
+
         self.load_quest()
 
         self.display_surface = pygame.display.get_surface()
@@ -17,15 +17,20 @@ class Quest:
 
         self.index = 0
 
-        self.font = pygame.font.Font(
-            "venv/assets/fonts/Agdasima-Regular.ttf", 25)
+        font_path = "venv/assets/fonts/Agdasima-Regular.ttf"
+        self.font = pygame.font.Font(font_path, 25)
         self.font.bold = True
-        self.true_icon = pygame.image.load("venv/assets/icons/true_icon.png").convert_alpha()
-        self.true_icon = pygame.transform.scale(self.true_icon, (32, 32))
+        self.font_list = pygame.font.Font(font_path, 20)
+        self.font_text = pygame.font.Font(font_path, 20)
+        self.font_small = pygame.font.Font(font_path, 16)
+
+        self.true_icon = pygame.image.load(
+            "venv/assets/icons/true_icon.png").convert_alpha()
+        self.true_icon = pygame.transform.scale(self.true_icon, (28, 28))
 
         self.main_rect = pygame.rect.Rect(
             (0, 0, self.SW * 0.8, self.SH * 0.8)).move_to(center=[self.SW // 2, self.SH // 2])
-    
+
     def input(self):
         if self.keylogs.is_pressed(pygame.K_UP):
             self.index -= 1
@@ -35,7 +40,7 @@ class Quest:
             self.keylogs.remove_key(pygame.K_DOWN)
 
         self.index = self.index % len(self.quests)
-    
+
     def update(self):
         self.input()
         self.draw_quests()
@@ -65,78 +70,159 @@ class Quest:
                     with open("venv/code/json/quest.json", "w+", encoding="utf-8") as q:
                         json.dump(data_quest, q, ensure_ascii=False, indent=4)
 
+    def wrap_text(self, text, font, max_width):
+        """Découpe un texte en plusieurs lignes pour qu'il tienne dans max_width."""
+        words = text.split(" ")
+        lines = []
+        current = ""
+        for word in words:
+            test = f"{current} {word}".strip()
+            if font.size(test)[0] <= max_width:
+                current = test
+            else:
+                if current:
+                    lines.append(current)
+                current = word
+        if current:
+            lines.append(current)
+        return lines
+
+    def clean_quest_name(self, raw_name):
+        """Transforme 'Talk [pnj1]' en 'Talk pnj1' pour l'affichage."""
+        return raw_name.replace("[", "").replace("]", "")
+
     def draw_quests(self):
         tint_surface = pygame.Surface(self.display_surface.size, pygame.SRCALPHA)
         tint_surface.fill((0, 0, 0, 175))
         self.display_surface.blit(tint_surface, (0, 0))
 
-        quest_title_backround = pygame.rect.Rect((0, 0, 100, 60)).move_to(
-            bottomleft=self.main_rect.topleft + pygame.Vector2(0, 4))
-        quest_title = self.font.render("Quêtes", True, (255, 255, 255))
-        quest_title_rect = quest_title.get_rect(
-            center=quest_title_backround.center)
+        pygame.draw.rect(self.display_surface, (157, 200, 232), self.main_rect, 0)
+        pygame.draw.rect(self.display_surface, (37, 150, 190), self.main_rect, 4)
 
-        pygame.draw.rect(self.display_surface,
-                         (157, 200, 232), self.main_rect, 0, 10)
-        pygame.draw.rect(self.display_surface, (37, 150, 190),
-                         self.main_rect, 4, 10, border_top_left_radius=0)
+        surface_alpha = pygame.Surface((self.main_rect.width - 6, self.main_rect.height - 6), pygame.SRCALPHA)
+        for i in range((self.main_rect.height - 6) // 2):
+            pygame.draw.line(surface_alpha, [100, 160, 120, 150], (0, i * 2), (self.main_rect.width - 6, i * 2))
+        self.display_surface.blit(surface_alpha, self.main_rect.topleft + pygame.Vector2(3, 3))
 
-        surface_alpha = pygame.Surface(
-            (self.main_rect.width - 3, self.main_rect.height - 3), pygame.SRCALPHA)
-        for i in range((self.main_rect.height - 3) // 2):
-            pygame.draw.line(surface_alpha, [
-                             100, 160, 120, 150], (0, i * 2), (self.main_rect.width - 3, i * 2))
+        header_rect = pygame.Rect(self.main_rect.x + 40, self.main_rect.y + 40, self.main_rect.width - 80, 80)
+        pygame.draw.rect(self.display_surface, (255, 255, 255), header_rect)
+        pygame.draw.rect(self.display_surface, (245, 206, 78), header_rect, 4)
+
+        title = self.font.render("Journal de quête", True, (0, 0, 0))
+        self.display_surface.blit(title, title.get_rect(center=header_rect.center))
+
+        body_rect = pygame.Rect(
+            self.main_rect.x + 40,
+            header_rect.bottom + 20,
+            self.main_rect.width - 80,
+            self.main_rect.bottom - 40 - (header_rect.bottom + 20)
+        )
+
+        list_rect = pygame.Rect(body_rect.x, body_rect.y, int(body_rect.width * 0.35), body_rect.height)
+        detail_rect = pygame.Rect(list_rect.right + 16, body_rect.y, body_rect.width - list_rect.width - 16, body_rect.height)
+
+        self.draw_quest_list(list_rect)
+        self.draw_quest_detail(detail_rect)
+
+    def draw_quest_list(self, rect):
+        pygame.draw.rect(self.display_surface, (255, 255, 255), rect)
+        pygame.draw.rect(self.display_surface, (37, 150, 190), rect, 3)
+
+        padding = 8
+        item_height = 44
+        y = rect.y + padding
+
+        for i, quest in enumerate(self.quests):
+            item_rect = pygame.Rect(rect.x + padding, y, rect.width - padding * 2, item_height)
+            if item_rect.bottom > rect.bottom - padding:
+                break
+
+            if i == self.index:
+                bg_color = (168, 216, 184)
+                border_color = (60, 140, 90)
+            else:
+                bg_color = (240, 240, 235)
+                border_color = (200, 200, 195)
+
+            pygame.draw.rect(self.display_surface, bg_color, item_rect, border_radius=6)
+            pygame.draw.rect(self.display_surface, border_color, item_rect, 2, border_radius=6)
+
+            text_color = (120, 120, 115) if quest["completed"] == "True" else (30, 30, 30)
+            label = self.clean_quest_name(quest["quest"])
+
+            if quest["completed"] == "True":
+                icon_pos = (item_rect.right - 34, item_rect.centery - 14)
+                self.display_surface.blit(self.true_icon, icon_pos)
+                max_text_width = item_rect.width - 50
+            else:
+                max_text_width = item_rect.width - 16
+
+            label_surface = self.font_list.render(label, True, text_color)
+            if label_surface.get_width() > max_text_width:
+                while label and self.font_list.size(label + "...")[0] > max_text_width:
+                    label = label[:-1]
+                label += "..."
+                label_surface = self.font_list.render(label, True, text_color)
+
+            text_x = item_rect.x + 8
+            self.display_surface.blit(label_surface, (text_x, item_rect.centery - label_surface.get_height() // 2))
+
+            y += item_height + 6
+
+    def draw_quest_detail(self, rect):
+        pygame.draw.rect(self.display_surface, (255, 255, 255), rect)
+        pygame.draw.rect(self.display_surface, (37, 150, 190), rect, 3)
+
+        quest = self.quests[self.index]
+        padding = 16
+        inner_width = rect.width - padding * 2
+
+        title_surface = self.font.render(self.clean_quest_name(quest["quest"]), True, (30, 30, 30))
+        self.display_surface.blit(title_surface, (rect.x + padding, rect.y + padding))
+
+        if quest["completed"] == "True":
+            self.display_surface.blit(self.true_icon, (rect.right - padding - 28, rect.y + padding))
+
+        text_y = rect.y + padding + title_surface.get_height() + 14
+        for line in self.wrap_text(quest["text"], self.font_text, inner_width):
+            line_surface = self.font_text.render(line, True, (70, 70, 70))
+            self.display_surface.blit(line_surface, (rect.x + padding, text_y))
+            text_y += line_surface.get_height() + 4
+
+        text_y += 10
+        progress_text = self.handle_flags(quest["flags"])
+        progress_rect = pygame.Rect(rect.x + padding, text_y, inner_width, 32)
+        pygame.draw.rect(self.display_surface, (245, 224, 168), progress_rect, border_radius=6)
+        pygame.draw.rect(self.display_surface, (44, 44, 44), progress_rect, 2, border_radius=6)
+        progress_surface = self.font_small.render(progress_text, True, (90, 70, 20))
         self.display_surface.blit(
-            surface_alpha, self.main_rect.topleft + pygame.Vector2(3, 3))
+            progress_surface,
+            (progress_rect.x + 10, progress_rect.centery - progress_surface.get_height() // 2)
+        )
 
-        
-        
-        pygame.draw.rect(self.display_surface, (157, 200, 232),
-                         quest_title_backround, 0, 10, border_bottom_left_radius=0, border_bottom_right_radius=0)
-        pygame.draw.rect(self.display_surface, (37, 150, 190),
-                         quest_title_backround, 4, 10, border_bottom_left_radius=0, border_bottom_right_radius=0)
-        
-        surface_title_alpha = pygame.Surface(
-            quest_title_backround.size, pygame.SRCALPHA)
-        pygame.draw.rect(surface_title_alpha, (100, 150, 150, 90), (0, 0, surface_title_alpha.width,
-                         surface_title_alpha.height // 2), border_top_left_radius=10, border_top_right_radius=10)
+        text_y = progress_rect.bottom + 10
+        reward_text = self.handle_reward(quest["reward"])
+        reward_rect = pygame.Rect(rect.x + padding, text_y, inner_width, 32)
+        pygame.draw.rect(self.display_surface, (232, 200, 216), reward_rect, border_radius=6)
+        pygame.draw.rect(self.display_surface, (44, 44, 44), reward_rect, 2, border_radius=6)
+        reward_surface = self.font_small.render(f"Récompense : {reward_text}", True, (90, 30, 55))
         self.display_surface.blit(
-            surface_title_alpha, quest_title_backround.topleft)
-        
-        self.display_surface.blit(quest_title, quest_title_rect)
+            reward_surface,
+            (reward_rect.x + 10, reward_rect.centery - reward_surface.get_height() // 2)
+        )
 
-        
-        y_offset = self.main_rect.top + 40 - (0 if self.index < 5 else 10 - (self.index - 6) * (self.main_rect.height - 80 - 4 * 10) / 5)
+    def handle_flags(self, flags):
+        if not flags:
+            return "Aucune condition requise"
+        done = sum(1 for f in flags if f in self.flags)
+        return f"Progression : {done}/{len(flags)}"
 
-        for index, quest in enumerate(self.quests):
-            quest_completed = quest["completed"]
-            quest = self.handle_tag(quest["quest"])
-            quest_backround = pygame.rect.Rect(0, 0, self.main_rect.width * 0.8, (self.main_rect.height - 80 - 4 * 10) / 5).move_to(left=self.main_rect.left + 40, top=y_offset + index * (self.main_rect.height - 80 + 10) / 5 )
-            quest_txt = self.font.render(quest, True, (255, 255, 255) if quest_completed == "True" else (0, 0, 0))
-            quest_txt_rect = quest_txt.get_rect(midleft=quest_backround.midleft + pygame.Vector2(20, 0))
-
-            if self.main_rect.collidepoint(quest_backround.bottomleft)  and self.main_rect.collidepoint(quest_backround.topleft):
-                pygame.draw.rect(self.display_surface, (255, 255, 255) if quest_completed != "True" else (100, 150, 120), quest_backround, border_radius=5)
-                pygame.draw.rect(self.display_surface, (196, 202, 204), quest_backround, 4, 5)
-
-                if self.index == index:
-                    pygame.draw.rect(self.display_surface, (0, 0, 0), quest_backround, 4, 5)
-
-                if quest_completed == "True":
-                    icon_rect = self.true_icon.get_rect(midleft=quest_backround.midright + pygame.Vector2(20, 0))
-                    self.display_surface.blit(self.true_icon, icon_rect)
-                self.display_surface.blit(quest_txt, quest_txt_rect)
-
-    def handle_tag(self, txt):
-        action, value = txt.split(" ")
-        value = value[1:-1]
-
-        if action == "Talk":
-            return f"Parlez à {value}"
-        elif action == "Figth":
-            return f"Combattez {value}"
-        elif action == "Enter":
-            return f"Entrez dans {value}"
+    def handle_reward(self, reward):
+        if not reward:
+            return "Aucune"
+        if isinstance(reward, list):
+            return ", ".join(str(r) for r in reward)
+        return str(reward)
 
     def load_quest(self):
         with open("venv/code/json/save.json", "r+") as file:
@@ -148,5 +234,15 @@ class Quest:
             with open("venv/code/json/quest.json", "r+") as f:
                 quest_data = json.load(f)
 
-                self.quests = [{"index": index,"quest": quest_data[self.last_quest_id][index]["quest"], "flags": quest_data[self.last_quest_id][index]["required_flags"], "completed_flag": quest_data[self.last_quest_id][index]["completed_flag"], "completed": quest_data[self.last_quest_id]
-                                [index]["completed"]} for index, quest in enumerate(quest_data[self.last_quest_id])]    
+                self.quests = [
+                    {
+                        "index": index,
+                        "quest": quest_data[self.last_quest_id][index]["quest"],
+                        "flags": quest_data[self.last_quest_id][index]["required_flags"],
+                        "completed_flag": quest_data[self.last_quest_id][index]["completed_flag"],
+                        "completed": quest_data[self.last_quest_id][index]["completed"],
+                        "reward": quest_data[self.last_quest_id][index]["reward"],
+                        "text": quest_data[self.last_quest_id][index]["quest_text"],
+                    }
+                    for index, quest in enumerate(quest_data[self.last_quest_id])
+                ]

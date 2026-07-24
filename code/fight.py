@@ -45,7 +45,7 @@ class Fight:
 
         self.log_message  = ""
         self.log_timer    = 0
-        self.LOG_DURATION = 800
+        self.LOG_DURATION = 1800
         self.is_log = False
 
         self.animation_duration = 800
@@ -211,17 +211,17 @@ class Fight:
             return
         
         if self.keys.is_pressed(pygame.K_SPACE):
-            
+            self.keys.remove_key(pygame.K_SPACE)
             if self.log_timer > 0:
                 if self.typewritter_index == len(self.log_message):
+                    self.log_timer = 0
                     self.is_log = False
                 else:
                     self.typewritter_index = len(self.log_message)
             elif self.log_timer < 0:
+                self.log_timer = 0
                 self.is_log = False
                 self.typewritter_index = 0
-            
-            self.keys.remove_key(pygame.K_SPACE)
 
         if self.state == "ennemi_attack":
             if not self.is_log:
@@ -326,6 +326,7 @@ class Fight:
             self.draw_starting_animation()
         else:
             self.draw_pokemons()
+            self.draw_pokeballs()
 
         self._draw_ui_panel()
 
@@ -409,17 +410,25 @@ class Fight:
         lvl = self.ennemi_pokemons_stats[name].get("level", "?")
         self._draw_hp_bar(pos[0] - iw - 200, pos[1], self.ennemi_pokemons_stats[name]["stats"]["hp"],self.ennemi_pokemons_base_hp[name], lvl, name)
 
+    def draw_pokeballs(self):
+        pokeball_sprite = pygame.image.load("venv/assets/sprite/items/pokeballs/pokeball_b&w.png").convert_alpha()
+        pokeball_sprite = pygame.transform.scale(pokeball_sprite, (48, 48))
+        pos = [20, 780 - 250]
+
+        for index, pokemon in enumerate(self.selected_team):
+            self.screen.blit(pokeball_sprite, (pos[0] + (20 + index * pokeball_sprite.width), pos[1]))
+
+
     def _draw_hp_bar(self, x, y, hp, base_hp, lvl, name):
         hp      = max(0, int(hp))
         base_hp = max(1, int(base_hp))
         ratio   = hp / base_hp
         width = 200
         bar_w   = int(width * ratio)
-        color = (60, 200, 60) if ratio > 0.5 else (220, 180, 0) if ratio > 0.25 else (200, 40, 40)
         
         surface = pygame.Surface(self.screen.size, pygame.SRCALPHA)
         pygame.draw.polygon(surface, (200, 200, 200, 255), [[x, y], [x + width + 20, y], [x + width + 20 - 10, y + 75], [x - 10, y + 75]])
-        pygame.draw.polygon(surface, (100, 100, 100, 255), [[x, y], [x + width + 20, y], [x + width + 20 - 10, y + 75], [x - 10, y + 75]], 4)
+        pygame.draw.polygon(surface, (30, 30, 30, 255), [[x, y], [x + width + 20, y], [x + width + 20 - 10, y + 75], [x - 10, y + 75]], 4)
 
         mid_1 = [((x + width + 20) + (x + width + 20 - 10)) / 2, (y + (y + 75)) / 2]
         mid_2 = [(x + (x - 10)) / 2, (y + (y + 75)) / 2]
@@ -428,13 +437,14 @@ class Fight:
         name_surface = self.font.render(name, True, (255, 255, 255))
 
         bar_center = [(mid_2[0] + (x + width + 20 - 10)) / 2, (mid_2[1] + ( y + 75)) / 2]
+
         bar_rect = pygame.rect.Rect(0, 0, width, 12).move_to(center=bar_center)
 
         hp_bar = pygame.rect.Rect(0, 0, bar_w, 12).move_to(topleft=bar_rect.topleft)
 
-        pygame.draw.polygon(surface, (100, 100, 100, 255), [[x, y], [x + width + 20, y], mid_1, mid_2])
+        pygame.draw.polygon(surface, (40, 40, 40), [[x, y], [x + width + 20, y], mid_1, mid_2])
         pygame.draw.rect(surface, (60, 60, 60), bar_rect, 0, 12)
-        pygame.draw.rect(surface, color=color, rect=hp_bar, width=0, border_bottom_left_radius=12, border_top_left_radius=12)
+        pygame.draw.rect(surface, (100, 200, 100), hp_bar, 0, 12)
         surface.blit(name_surface, name_surface.get_rect(center=name_center))
         self.screen.blit(surface, (0, 0))
 
